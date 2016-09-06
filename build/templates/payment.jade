@@ -1,0 +1,62 @@
+extends layouts/layout
+block vars
+    - var title='Оплата'
+block content
+    //.page-title.page-title--first Оплата
+    .container.pay.bill
+        .course-item
+            a.course-item__in(href="")
+                .course-item__img
+                    img(src='http://angliskiekoroli.16mb.com/2/122.jpg')
+                h3.course-item__title Полный курс обучения кондитеров "КОНДИТЕР-ЭКСПЕРТ" (Кондитер 6 разряда)
+                .course-item__info
+                    .course-item__duration 150 часов
+                    .course-item__price 7500 <i class="fa fa-rub"></i>
+        h3.m-b-8.text-center Выберите способ оплаты
+        .pay-form
+            a.pay-form__item(href="", target="_blank")
+                input(type="radio", name="method")
+                .pay-form__content.pay-form__content_card
+                    .pay-form__img
+                        img(src='assets/i/cards.png', alt='')
+                    .pay-form__title Оплатить картой
+            a.pay-form__item(href="", target="_blank")
+                input(type="radio", name="method")
+                .pay-form__content
+                    .pay-form__img.pay-form__img_sber
+                        img(src='assets/i/sber12.png', alt='')
+                    .pay-form__title
+                        | Оплатить через
+                        br
+                        | Сбербанк Онлайн
+            a.pay-form__item(href="", target="_blank")
+                input(type="radio", name="method")
+                .pay-form__content.pay-form__content_y
+                    .pay-form__img
+                        img(src='assets/i/ym.png', alt='')
+                    .pay-form__title
+                        | Оплатить через
+                        br
+                        | Яндекс.Деньги
+            a.pay-form__item(href="", target="_blank")
+                input(type="radio", name="method")
+                .pay-form__content.pay-form__content_bill
+                    .pay-form__img
+                        img(src='assets/i/bill2.png', alt='')
+                    .pay-form__title
+                        | Распечатать квитанцию
+                        .pay-form__sub-title
+                            | для оплаты в банке
+                            br
+                            | (для физических лиц)
+            a.pay-form__item(href="", target="_blank")
+                input(type="radio", name="method")
+                .pay-form__content.pay-form__content_recept
+                    .pay-form__img
+                        img(src='assets/i/bill1.jpg', alt='')
+                    .pay-form__title
+                        | Сформировать счет
+                        .pay-form__sub-title
+                            | на оплату (для юридических лиц)
+            p.text-center
+                a.bill__info(href="" target="_blank") Оплачивая услугу, Вы соглашаетесь c условиями договора оферты

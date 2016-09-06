@@ -1,0 +1,48 @@
+extends layouts/layout
+block vars
+    - var title='Оплата'
+block content
+    //.page-title.page-title--first Сформировать счет
+    .container.bill.pay
+        .course-item
+            a.course-item__in(href="")
+                .course-item__img
+                    img(src='http://angliskiekoroli.16mb.com/2/122.jpg')
+                h3.course-item__title Наименование курса обучения
+                .course-item__info
+                    .course-item__duration 150 часов
+                    .course-item__price 7500 <i class="fa fa-rub"></i>
+        h3.text-center Сформировать счет
+        p.text-center.m-b-8
+            | Введите данные организации
+            br
+            | для формирования счета
+            br
+            | на оплату для юридических лиц
+        form.bill-form
+            label
+                span Контактное лицо*
+                input(type="text")
+            label
+                span E-mail*
+                input(type="email")
+            label
+                span Телефон*
+                input(type="tel")
+            label
+                span Название организации*
+                input(type="text")
+            label
+                span ИНН*
+                input(type="text")
+            label
+                span КПП*
+                input(type="text")
+            label
+                span Юридический адрес*
+                input(type="text")
+            label
+                span Комментарии
+                textarea
+            a(href='') Оплачивая услугу, Вы соглашаетесь с условиями договора оферты.
+            button(type="submit")  Сформировать счет

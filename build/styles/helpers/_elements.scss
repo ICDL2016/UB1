@@ -1,0 +1,260 @@
+$handle: "(max-width: 1440px)";
+$handle-small: "(max-width: 1024px)";
+$handle-wide: "(max-width: 1440px)";
+$phone-small: "(max-width: 400px)";
+$phone-medium: "(max-width: 500px)";
+$phone: "(max-width:768px)";
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  background: #fff;
+  font-family: $font-default;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-blue;
+}
+.m-t-15 {
+  margin-top: 15px;
+}
+.m-b-8 {
+  margin-bottom: 8px;
+}
+.container {
+  @extend %clearfix;
+  //width: 1000px;
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+  @media #{$handle-small}{
+    width: auto;
+  }
+  &_hours {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+}
+
+[type=submit], .btn {
+  padding: 6px 30px;
+  @extend %inline-block;
+  @extend %text-bold;
+  @extend %transition;
+  appearance: none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: $color-blue;
+  color: #fff;
+  font-size: 18px;
+  //font-family: $font-headings;
+  line-height: 21px;
+  &:hover, &.active {
+    background: $color-dark-blue;
+    color: #fff;
+  }
+
+  &.btn-angle {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 100%;
+      width: 0;
+      height: 0;
+      top: 50%;
+      margin-top: -16px;
+      border-style: solid;
+      border-width: 16px 0 16px 16px;
+      border-color: transparent transparent transparent $color-blue;
+      @extend %transition;
+    }
+    &:hover {
+      &:after {
+        border-color: transparent transparent transparent $color-dark-blue;
+      }
+    }
+  }
+  &.btn-wide {
+    padding: 9px 110px;
+  }
+  &.btn-ico {
+    padding: 0;
+    background-color: transparent;
+  }
+  &.btn-lg {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  &.btn-block {
+    width: 100%;
+  }
+  &.btn-2lg {
+    padding-left: 58px;
+    padding-right: 58px;
+    &:hover {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+  }
+}
+
+input:not([type="submit"]), textarea {
+  @extend %inline-block;
+  padding: 4px 10px 2px;
+  border: 1px solid #0d6ec6;
+  font-size: 14px;
+  //font-family: $font-headings;
+  color: $color-blue;
+  @extend %transition;
+  &.error {
+    border-color: #ff0033;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #0d6ec6;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: #0d6ec6;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #0d6ec6;
+  }
+
+  &:-ms-input-placeholder {
+    color: #0d6ec6;
+  }
+
+}
+
+label.error {
+  color: #ff0033;
+  span {
+    display: block;
+  }
+  input {
+    border-color: #ff0033;
+  }
+}
+
+.select-wrap {
+  position: relative;
+  background: #ffffff;
+
+  &:after {
+    content: '\E004';
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 10px;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    font-weight: normal;
+    @extend %inline-block;
+    background: transparent;
+    position: relative;
+    z-index: 99;
+    padding: 6px 15px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    @extend %text-bold;
+    color: #333;
+    //font-family: $font-headings;
+    border-radius: 0;
+    &[disabled] {
+      cursor: default;
+      opacity: 0.5;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  &_cherry {
+    background: #a13d00;
+    &:hover {
+      background-color: darken(#a13d00, 10%);
+
+    }
+  }
+}
+
+blockquote {
+  padding: 13px;
+  margin-bottom: 20px;
+  border-left: 3px solid #ec2224;
+  background: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-blue;
+  //font-family: $font-headings;
+  font-weight: bold;
+  a {
+    margin-left: 20px;
+    font-weight: normal;
+    @extend %text-default;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  margin: 20px 0;
+  @extend .h1;
+}
+
+h2 {
+  @extend .h2;
+}
+
+h3 {
+  @extend .h3;
+}
+
+h4 {
+  @extend .h4;
+  font-family: $font-default;
+  font-weight: normal;
+}
+
+h2, h3 {
+  margin: 15px 0;
+}
+
+b {
+  //font-family: $font-headings;
+}
+
+a {
+  color: #0d6ec6;
+  @extend %transition-link;
+  text-decoration: underline;
+  font-size: 15px;
+  &:hover {
+    color: $color-dark-blue;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 20px;
+}

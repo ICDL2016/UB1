@@ -1,0 +1,33 @@
+extends layouts/layout
+block vars
+    - var title='Оплата'
+block content
+    //.page-title.page-title--first Сформировать квитанцию
+    .container.bill.pay
+        .course-item
+            a.course-item__in(href="")
+                .course-item__img
+                    img(src='http://angliskiekoroli.16mb.com/2/122.jpg')
+                h3.course-item__title Наименование курса обучения
+                .course-item__info
+                    .course-item__duration 150 часов
+                    .course-item__price 7500 <i class="fa fa-rub"></i>
+        h3.m-b-8.text-center Сформировать квитанцию
+        form.bill-form
+            label
+                span ФИО*
+                input(type="text")
+            label
+                span E-mail*
+                input(type="email")
+            label
+                span Телефон*
+                input(type="tel")
+            label
+                span Адрес
+                input(type="text")
+            label
+                span Комментарии
+                textarea
+            a(href='') Оплачивая услугу, Вы соглашаетесь с условиями договора оферты.
+            button(type="submit")  Сформировать квитанцию

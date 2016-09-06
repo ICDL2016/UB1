@@ -1,0 +1,169 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$label-discount-name: 'label-discount';
+$label-discount-x: 0px;
+$label-discount-y: 123px;
+$label-discount-offset-x: 0px;
+$label-discount-offset-y: -123px;
+$label-discount-width: 126px;
+$label-discount-height: 126px;
+$label-discount-total-width: 420px;
+$label-discount-total-height: 417px;
+$label-discount-image: 'png-sprite.png';
+$label-discount: (0px, 123px, 0px, -123px, 126px, 126px, 420px, 417px, 'png-sprite.png', 'label-discount', );
+$label-hours-name: 'label-hours';
+$label-hours-x: 296px;
+$label-hours-y: 115px;
+$label-hours-offset-x: -296px;
+$label-hours-offset-y: -115px;
+$label-hours-width: 110px;
+$label-hours-height: 110px;
+$label-hours-total-width: 420px;
+$label-hours-total-height: 417px;
+$label-hours-image: 'png-sprite.png';
+$label-hours: (296px, 115px, -296px, -115px, 110px, 110px, 420px, 417px, 'png-sprite.png', 'label-hours', );
+$label-tablet-name: 'label-tablet';
+$label-tablet-x: 128px;
+$label-tablet-y: 123px;
+$label-tablet-offset-x: -128px;
+$label-tablet-offset-y: -123px;
+$label-tablet-width: 125px;
+$label-tablet-height: 125px;
+$label-tablet-total-width: 420px;
+$label-tablet-total-height: 417px;
+$label-tablet-image: 'png-sprite.png';
+$label-tablet: (128px, 123px, -128px, -123px, 125px, 125px, 420px, 417px, 'png-sprite.png', 'label-tablet', );
+$sky1-name: 'sky1';
+$sky1-x: 0px;
+$sky1-y: 0px;
+$sky1-offset-x: 0px;
+$sky1-offset-y: 0px;
+$sky1-width: 142px;
+$sky1-height: 121px;
+$sky1-total-width: 420px;
+$sky1-total-height: 417px;
+$sky1-image: 'png-sprite.png';
+$sky1: (0px, 0px, 0px, 0px, 142px, 121px, 420px, 417px, 'png-sprite.png', 'sky1', );
+$sky1-small-name: 'sky1_small';
+$sky1-small-x: 0px;
+$sky1-small-y: 251px;
+$sky1-small-offset-x: 0px;
+$sky1-small-offset-y: -251px;
+$sky1-small-width: 99px;
+$sky1-small-height: 85px;
+$sky1-small-total-width: 420px;
+$sky1-small-total-height: 417px;
+$sky1-small-image: 'png-sprite.png';
+$sky1-small: (0px, 251px, 0px, -251px, 99px, 85px, 420px, 417px, 'png-sprite.png', 'sky1_small', );
+$sky2-name: 'sky2';
+$sky2-x: 296px;
+$sky2-y: 0px;
+$sky2-offset-x: -296px;
+$sky2-offset-y: 0px;
+$sky2-width: 124px;
+$sky2-height: 113px;
+$sky2-total-width: 420px;
+$sky2-total-height: 417px;
+$sky2-image: 'png-sprite.png';
+$sky2: (296px, 0px, -296px, 0px, 124px, 113px, 420px, 417px, 'png-sprite.png', 'sky2', );
+$sky2-small-name: 'sky2_small';
+$sky2-small-x: 0px;
+$sky2-small-y: 338px;
+$sky2-small-offset-x: 0px;
+$sky2-small-offset-y: -338px;
+$sky2-small-width: 87px;
+$sky2-small-height: 79px;
+$sky2-small-total-width: 420px;
+$sky2-small-total-height: 417px;
+$sky2-small-image: 'png-sprite.png';
+$sky2-small: (0px, 338px, 0px, -338px, 87px, 79px, 420px, 417px, 'png-sprite.png', 'sky2_small', );
+$sky3-name: 'sky3';
+$sky3-x: 144px;
+$sky3-y: 0px;
+$sky3-offset-x: -144px;
+$sky3-offset-y: 0px;
+$sky3-width: 150px;
+$sky3-height: 106px;
+$sky3-total-width: 420px;
+$sky3-total-height: 417px;
+$sky3-image: 'png-sprite.png';
+$sky3: (144px, 0px, -144px, 0px, 150px, 106px, 420px, 417px, 'png-sprite.png', 'sky3', );
+$sky3-small-name: 'sky3_small';
+$sky3-small-x: 101px;
+$sky3-small-y: 251px;
+$sky3-small-offset-x: -101px;
+$sky3-small-offset-y: -251px;
+$sky3-small-width: 105px;
+$sky3-small-height: 74px;
+$sky3-small-total-width: 420px;
+$sky3-small-total-height: 417px;
+$sky3-small-image: 'png-sprite.png';
+$sky3-small: (101px, 251px, -101px, -251px, 105px, 74px, 420px, 417px, 'png-sprite.png', 'sky3_small', );
+$spritesheet-width: 420px;
+$spritesheet-height: 417px;
+$spritesheet-image: 'png-sprite.png';
+$spritesheet-sprites: ($label-discount, $label-hours, $label-tablet, $sky1, $sky1-small, $sky2, $sky2-small, $sky3, $sky3-small, );
+$spritesheet: (420px, 417px, 'png-sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
