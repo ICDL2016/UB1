@@ -3761,7 +3761,8 @@ table.learn-gradebook-table th, table.learn-gradebook-table td {
   float: left;
   width: 270px;
   padding: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-y: auto; }
   @media (max-width: 768px) {
     .nav {
       width: 150px; } }

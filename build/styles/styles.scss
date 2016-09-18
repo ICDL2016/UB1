@@ -48,6 +48,7 @@
   width: 270px;
   padding: 10px;
   overflow: hidden;
+  overflow-y: auto;
   @extend %transition;
   @media #{$phone}{
     width: 150px;
@@ -795,8 +796,8 @@
 .product-heads {
   margin-top: 10px;
   h3 {
-      margin: 0 0 5px;
-      font-size: 17px;
+    margin: 0 0 5px;
+    font-size: 17px;
   }
 }
 
@@ -1675,8 +1676,7 @@
   }
 }
 
-
-.img-responsive img{
+.img-responsive img {
   display: inline-block;
   vertical-align: middle;
 }
