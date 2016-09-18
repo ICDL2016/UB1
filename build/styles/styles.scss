@@ -1,4 +1,4 @@
-@import "compass";
+//@import "compass";
 @import "helpers/normalize";
 @import "helpers/png-sprite";
 //@import "icons";
@@ -8,8 +8,8 @@
 @import "helpers/plugins";
 @import "helpers/text";
 @import "helpers/elements";
-@import "blocks/header";
-@import "blocks/footer";
+//@import "blocks/header";
+//@import "blocks/footer";
 @import "bitrix_overriders";
 
 .main {
@@ -56,14 +56,14 @@
     }
   }
   &__in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 287px;
-    padding-left: 10px;
-    height: 100%;
-    overflow-y: scroll;
-    padding-right: 17px;
+    //position: absolute;
+    //left: 0;
+    //top: 0;
+    //width: 287px;
+    //padding-left: 10px;
+    //height: 100%;
+    //overflow-y: scroll;
+    //padding-right: 17px;
     //overflow: hidden;
   }
   &.active {
