@@ -233,7 +233,7 @@ input:not([type="submit"]), textarea {
 }
 
 .certificate-action-btn:hover {
-	color: #ff420e;
+	/*color: #ff420e;*/
 }
 
 .certificate-img-div {
