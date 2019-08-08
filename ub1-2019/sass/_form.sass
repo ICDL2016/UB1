@@ -1,0 +1,137 @@
+.form
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 auto 10px
+    width: 400px
+    &-wrap
+        padding-bottom: 15px
+        background: $light
+
+    &-body
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        padding: 15px 0 0 0
+
+    &-block
+        margin: 0 auto 20px
+        width: 350px
+        text-align: center
+    &-checkbox
+        &__block
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            padding-left: 2px
+            width: 100%
+
+    &-input
+        width: 100%
+        margin-bottom: 10px
+        padding: 8px 10px
+        color: #808080
+        font-family: ArialMT, sans-serif
+        &__span
+            display: none
+            align-self: flex-start
+            margin-top: -5px
+            padding: 0 0 5px 0
+            font-size: 10px
+            font-weight: 300
+            font-family: Arial, sans-serif
+            text-align: left
+            width: 100%
+            color: $blue
+    &-label
+        margin: 0 0 0 2px
+        text-align: left
+        color: $blue
+        font-size: 10px
+        cursor: pointer
+        &:hover
+            text-decoration: underline
+
+    &-title
+        font-family: 'ArialBold', sans-serif
+        font-weight: 700
+        font-size: 20px
+    &-descr
+        margin-bottom: 10px
+
+
+    &-bottom
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: auto
+        padding: 10px
+        background: $blue
+        color: #fff
+        cursor: pointer
+        border: none
+        width: 100%
+        transition: all .3s
+        &:hover
+            .form-bottom__top
+                text-decoration: underline
+
+        &__top
+            margin-bottom: 5px
+            font-size: 20px
+            font-weight: 700
+        &__second
+            font-size: 13px
+        &__date
+            font-size: 11px
+
+    &-descr
+        margin: auto
+        width: 600px
+        line-height: 1.2
+        font-size: 13px
+        text-align: center
+        color: #fff
+
+.form input::-webkit-input-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+
+.form input:-moz-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+
+.form textarea::-webkit-input-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+
+.form textarea:-moz-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+
+.form-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+
+.form-checkbox + label
+    margin: 0 auto 15px
+    padding: 3px 22px
+    position: relative
+    cursor: pointer
+
+.form-checkbox + label:before
+    content: ''
+    position: absolute
+    left: -3px
+    top: 1px
+    width: 15px
+    height: 15px
+    background-color: #ffffff
+    text-align: center
+
+.form-checkbox:checked + label:before
+    content: '\2714'

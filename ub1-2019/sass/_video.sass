@@ -1,0 +1,31 @@
+.video
+    padding: 15px 0 0 0
+    background: $light
+    &-block
+        margin: auto
+        width: 100%
+        background: url(../img/video-bg.jpg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        background-position-y: 20%
+        height: 400px
+        position: relative
+        pointer-events: none
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 48%
+            transform: translateY(-50%)
+            border: 50px solid transparent
+            border-left: 80px solid $blue
+            pointer-events: all
+            cursor: pointer
+            transition: border .3s
+        &:hover
+            &::after
+                border-left: 80px solid $light
+
+#divPlayer1
+    display: none
+    //margin-bottom: -5px

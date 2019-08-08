@@ -1,0 +1,110 @@
+.course
+    &-title, &-maintitle
+        margin-bottom: 0
+    &-study
+        margin-top: 40px
+    &-other
+        margin: 10px auto
+        text-align: center
+        color: $blue
+    &-price
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: auto
+        width: 300px
+        color: $blue
+        font-size: 16px
+        &__prices
+            display: flex
+            align-items: center
+        &__old
+            margin-right: 10px
+            text-decoration: line-through
+        &__new
+            font-size: 20px
+            font-weight: 700
+        &__wrap
+            padding: 10px 10px 0
+            width: 100%
+            background: $light
+
+
+    &-modal
+        display: none
+        padding: 25px 15px
+        background: $light
+        z-index: 100
+        position: fixed
+        width: 600px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        color: $blue
+        &__title
+            text-align: center
+            font-size: 18px
+            font-weight: 700
+        &__list
+            font-size: 15px
+            li
+                margin: 5px 0
+
+.programms
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 20px
+    padding: 10px
+    &-block
+        display: flex
+        margin: 5px
+        height: 90px
+        width: 400px
+        cursor: pointer
+        &__img
+            img
+                width: 130px
+                height: 90px
+        &__descr
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            padding: 10px
+            font-size: 14px
+            background: $light
+            color: $blue
+            transition: all .2s
+        &__title
+            text-align: center
+            font-weight: bold
+            line-height: 1
+        &__more
+            font-size: 12px
+        &:hover
+            .programms-block__descr
+                background: $blue
+                color: #fff
+            .programms-block__more
+                font-size: 14px
+
+.overlay
+    display: none
+    position: fixed
+    z-index: 99
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(#000, .5)
+
+.modal
+    &-close
+        color: $blue
+        top: 5px
+        right: 10px
+        font-weight: 700
+        font-size: 20px
+        position: absolute
+        cursor: pointer

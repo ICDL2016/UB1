@@ -1,0 +1,75 @@
+.main
+    &-title
+        margin-bottom: 5px
+        padding: 3px
+        text-align: center
+        background: $light
+        color: $blue
+    &-courses
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+.choose
+    display: block
+    margin: 0 auto 40px
+    padding: 15px
+    width: 400px
+    background: $blue
+    text-align: center
+    color: #fff
+    transition: all .3s
+
+    &-title
+        margin-bottom: 10px
+        font-size: 18px
+    &-start
+        font-size: 20px
+        font-weight: 700
+    &:hover
+        color: #fff
+        .choose-start
+            text-decoration: underline
+
+
+.course
+    &-main
+        &__item
+            margin: 4px
+            float: left
+    &-item
+        width: 195px
+        text-decoration: none
+        &__img
+            display: block
+            margin-bottom: 5px
+        &__title
+            padding: 0 5px
+            margin: 0
+            color: $blue
+            text-align: center
+            font-size: 15px
+            line-height: 20px
+            min-height: 100px
+            font-weight: bold
+        &__info
+            padding: 0 10px
+            color: $blue
+            overflow: hidden
+        &__duration
+            float: left
+            font-size: 17px
+        &__price
+            float: right
+            font-weight: bold
+            font-size: 17px
+        &__in
+            display: block
+            padding-bottom: 11px
+            background-color: $light
+            text-decoration: none
+            transition: all .3s
+            &:hover
+                background: $blue
+                .course-item__title, .course-item__price, .course-item__duration
+                    color: #fff
