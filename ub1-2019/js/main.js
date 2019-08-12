@@ -22,8 +22,8 @@ function onYouTubeIframeAPIReady() {
         });
     } else {
         player1 = new YT.Player('divPlayer1', {
-            height: '400',
-            width: '800px',
+            height: '300',
+            width: '600px',
             videoId: 'd8Oc90QevaI',
         });
     }
@@ -168,7 +168,6 @@ $('.programms-block').on('click', function () {
         popup.style.overflow = 'scroll';
         popup.style.height = '95%';
     } else {
-        popup.style.overflow = 'visible';
         popup.style.height = popupHeight + 'px';
     }
 });

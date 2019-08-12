@@ -62,6 +62,8 @@ iframe {
   align-items: center;
   padding: 3px 15px 5px 15px;
   background: #215fc6; }
+  .header-logo a img {
+    max-width: 300px; }
   .header-hat {
     font-size: 30px;
     color: #fff;
@@ -78,8 +80,8 @@ iframe {
     background: url(../img/video-bg.jpg) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position-y: 20%;
-    height: 400px;
+    background-position-y: 0;
+    height: 300px;
     position: relative;
     pointer-events: none; }
     .video-block::after {
@@ -94,7 +96,7 @@ iframe {
       cursor: pointer;
       transition: border 0.3s; }
     .video-block:hover::after {
-      border-left: 80px solid #B3D6FE; }
+      border-left: 80px solid #1a4a9a; }
 
 #divPlayer1 {
   display: none; }
@@ -112,7 +114,7 @@ iframe {
 
 .choose {
   display: block;
-  margin: 0 auto 40px;
+  margin: 30px auto;
   padding: 15px;
   width: 400px;
   background: #215fc6;
@@ -126,9 +128,8 @@ iframe {
     font-size: 20px;
     font-weight: 700; }
   .choose:hover {
-    color: #fff; }
-    .choose:hover .choose-start {
-      text-decoration: underline; }
+    color: #fff;
+    background: #1a4a9a; }
 
 .course-main__item {
   margin: 4px;
@@ -398,8 +399,8 @@ iframe {
     border: none;
     width: 100%;
     transition: all 0.3s; }
-    .form-bottom:hover .form-bottom__top {
-      text-decoration: underline; }
+    .form-bottom:hover {
+      background: #1a4a9a; }
     .form-bottom__top {
       margin-bottom: 5px;
       font-size: 20px;
@@ -562,6 +563,14 @@ iframe {
   border: none;
   width: 100%;
   transition: all 0.3s; }
+  .login-submit:hover, .remind-submit:hover {
+    background: #1a4a9a; }
+
+.remind-hint {
+  padding-top: 25px;
+  margin: 0 0 10px 0; }
+  .remind-hint:hover {
+    text-decoration: none; }
 
 @media screen and (max-width: 991px) {
   .video-block {
@@ -614,6 +623,8 @@ iframe {
 
   .programms-block {
     width: 300px; }
+    .programms-block__title {
+      font-size: 12px; }
     .programms-block__descr {
       padding: 10px; }
 
@@ -622,7 +633,11 @@ iframe {
     padding-bottom: 25%; } }
 @media screen and (max-width: 639px) {
   .programms-block {
-    width: 400px; } }
+    width: 90%; }
+    .programms-block__descr {
+      width: 100%; }
+    .programms-block__title {
+      font-size: 14px; } }
 @media screen and (max-width: 575px) {
   .course-modal {
     padding: 5px;
@@ -687,6 +702,9 @@ iframe {
   .study-maintitle {
     margin-bottom: 15px; }
 
+  .course-maintitle {
+    margin-bottom: 0; }
+
   .contacts-maintitle {
     margin-bottom: 0; } }
 @media screen and (max-width: 467px) {
@@ -708,7 +726,9 @@ iframe {
     height: 200px; }
 
   .programms-block {
-    width: 290px; }
+    width: 95%; }
+    .programms-block__title {
+      font-size: 13px; }
     .programms-block__descr {
       padding: 5px; }
 
@@ -729,6 +749,9 @@ iframe {
 @media screen and (max-width: 368px) {
   .directions-block, .catalog-block {
     width: 100%; }
+
+  .course-price {
+    width: 90%; }
 
   .form-bottom__top {
     font-size: 18px; } }

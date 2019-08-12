@@ -39,7 +39,6 @@
     </div>
 </section>
 
-<div style="margin-bottom: 40px"></div>
 <?php require_once '_start-button.php'?>
 
 <?php require_once '_menu.php'?>

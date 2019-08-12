@@ -7,8 +7,8 @@
         background: url(../img/video-bg.jpg) center no-repeat
         -webkit-background-size: cover
         background-size: cover
-        background-position-y: 20%
-        height: 400px
+        background-position-y: 0
+        height: 300px
         position: relative
         pointer-events: none
         &::after
@@ -24,7 +24,7 @@
             transition: border .3s
         &:hover
             &::after
-                border-left: 80px solid $light
+                border-left: 80px solid darken($blue, 10)
 
 #divPlayer1
     display: none
