@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="header-hat">
-        <a href="login.php">
+        <a href="login.php" title="Личный кабинет">
             <i class="fa fa-graduation-cap"></i>
         </a>
     </div>
