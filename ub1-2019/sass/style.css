@@ -15,7 +15,7 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0;
+  margin: 80px 0 0 0;
   font-family: "ArialMT", sans-serif;
   color: #444; }
 
@@ -56,10 +56,28 @@ input:focus, textarea:focus {
 iframe {
   margin: auto; }
 
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #215fc6;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1; }
+
+.descr {
+  margin-bottom: 15px;
+  line-height: 1;
+  color: #215fc6;
+  text-align: justify; }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 3px 15px 5px 15px;
   background: #215fc6; }
   .header-logo a img {
@@ -68,7 +86,7 @@ iframe {
     font-size: 30px;
     color: #fff;
     transition: color 0.3s; }
-    .header-hat:hover {
+    .header-hat i:hover {
       color: #B3D6FE; }
 
 .video {
@@ -572,6 +590,166 @@ iframe {
   .remind-hint:hover {
     text-decoration: none; }
 
+.personal-title {
+  font-size: 24px; }
+.personal-thanktitle {
+  font-size: 20px; }
+.personal-questions {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px; }
+.personal-write {
+  margin-top: 0; }
+.personal-btn {
+  display: block;
+  margin: 10px auto;
+  width: 290px;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  background: #215fc6;
+  color: #fff;
+  text-align: center;
+  transition: background 0.3s;
+  cursor: pointer;
+  font-weight: 700; }
+  .personal-btn:hover {
+    background: #1a4a9a; }
+  .personal-btn__submit {
+    margin-bottom: 40px; }
+.personal-info {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5; }
+.personal-start {
+  font-size: 17px;
+  padding: 10px 0;
+  text-align: center;
+  background: #215fc6;
+  color: #ffffff; }
+.personal-burger {
+  cursor: pointer; }
+.personal-menu {
+  display: none;
+  position: fixed;
+  top: 64px;
+  right: 0;
+  z-index: 99;
+  height: 100%;
+  overflow: auto; }
+  .personal-menu ul {
+    display: inline-block;
+    float: right;
+    list-style: none; }
+    .personal-menu ul li a {
+      display: block;
+      border-left: 2px solid #888;
+      border-bottom: 2px solid #888;
+      text-decoration: none;
+      -webkit-transition: 0.3s;
+      text-align: left;
+      color: #fff;
+      background: #215fc6;
+      opacity: 0.9;
+      font-size: 15px;
+      padding: 7px 10px;
+      line-height: 1.3;
+      transition: all 0.3s; }
+      .personal-menu ul li a:hover {
+        opacity: 1; }
+    .personal-menu ul li:first-child a {
+      border-top: 2px solid #888; }
+.personal-form__wrapper {
+  margin: auto;
+  padding: 0 15px;
+  max-width: 1000px;
+  color: #fff; }
+.personal-form__block {
+  padding: 5px;
+  background: #215fc6; }
+  .personal-form__block-title, .personal-form__block-message, .personal-form__block-file {
+    display: flex;
+    margin-bottom: 10px; }
+    .personal-form__block-title label, .personal-form__block-message label, .personal-form__block-file label {
+      margin-right: 10px;
+      width: 30%;
+      text-align: right; }
+    .personal-form__block-title input, .personal-form__block-title textarea, .personal-form__block-message input, .personal-form__block-message textarea, .personal-form__block-file input, .personal-form__block-file textarea {
+      width: 70%; }
+  .personal-form__block-file__buttons {
+    display: flex;
+    flex-direction: column; }
+    .personal-form__block-file__buttons input {
+      font-size: 14px;
+      margin-bottom: 5px;
+      width: 100%; }
+      .personal-form__block-file__buttons input:last-child {
+        width: 60px; }
+.personal-courses__blocks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 10px auto 50px;
+  width: 100%;
+  color: #fff; }
+.personal-courses__block {
+  margin: 0 5px 20px;
+  background: #215fc6;
+  width: 180px;
+  text-align: center; }
+  .personal-courses__block-info {
+    padding: 5px; }
+  .personal-courses__block-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px; }
+  .personal-courses__block-title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2; }
+  .personal-courses__block-smalltitle {
+    margin: 8px 0;
+    background: #215fc6;
+    font-size: 13px; }
+  .personal-courses__block-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .personal-courses__block-languages span {
+      display: block;
+      margin: 1px;
+      font-size: 12px;
+      width: 18%; }
+  .personal-courses__block-smallinfo {
+    font-size: 14px; }
+  .personal-courses__block-hoursprice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .personal-courses__block-hoursprice strong {
+      font-size: 16px; }
+  .personal-courses__block-discount {
+    font-size: 20px;
+    font-weight: 700; }
+  .personal-courses__block-action {
+    padding: 8px 0; }
+    .personal-courses__block-action a {
+      font-weight: 700;
+      line-height: 1.4; }
+
+@media screen and (max-width: 767px) {
+  .personal-form__block-header {
+    margin-bottom: 20px; }
+  .personal-form__block-title, .personal-form__block-message, .personal-form__block-file {
+    flex-direction: column; }
+    .personal-form__block-title label, .personal-form__block-message label, .personal-form__block-file label {
+      width: 100%;
+      text-align: left; }
+    .personal-form__block-title input, .personal-form__block-title textarea, .personal-form__block-message input, .personal-form__block-message textarea, .personal-form__block-file input, .personal-form__block-file textarea {
+      width: 100%; } }
 @media screen and (max-width: 991px) {
   .video-block {
     height: 300px;
@@ -737,11 +915,12 @@ iframe {
 
   .form-bottom__second {
     text-align: center; } }
+@media screen and (max-width: 410px) {
+  .header img {
+    width: 200px; } }
 @media screen and (max-width: 400px) {
   .header-logo {
     margin: 0; }
-    .header-logo img {
-      width: 240px; }
 
   .course-program__block {
     margin: 5px auto;
@@ -755,16 +934,3 @@ iframe {
 
   .form-bottom__top {
     font-size: 18px; } }
-.title {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #215fc6;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1; }
-
-.descr {
-  margin-bottom: 15px;
-  line-height: 1;
-  color: #215fc6;
-  text-align: justify; }
