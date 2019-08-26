@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#d65633">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=yes">
+
+
+	<link rel="stylesheet" href="libs/animate/animate.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/slide-method.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+</head>
+
+<body>
+	<header class="header-new">
+	    <div class="logo-div">            
+	        <a href="http://amonag.ru" target="_blank"><img src="img/amonag-red-logo2.png" alt="AMONAG"></a>
+	    </div>
+	    <div class="language-block">
+            <div class="language-div">
+                <span id="language" class="language" title="Сменить язык сайта">Ru</span>
+                <ul class="lang__list">
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">ES</a></li>
+                    <li><a href="#">DE</a></li>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">PT</a></li>
+                </ul>
+            </div>
+            <div class="enter-div">
+                <a href="authorization.html">ВХОД</a>
+            </div>
+		</div>
+	</header>
+	
+	<div class="content">
+
+		<div class="content__restaurant_bs">
+			<div class="restaurant__content">
+                <h2>СЛАЙД МЕТОД<br>ускоренного освоения языков</h2>
+            </div>
+            <ul class="languages-string-div">
+                <li>EN</li>
+                <li>ES</li>
+                <li>RU</li>
+                <li>DE</li>
+                <li>FR</li>
+                <li>IT</li>
+                <li>PT</li>
+                <li>JA</li>
+                <li>ZH</li>
+                <li>PL</li>
+                <li>TR</li>
+                <li>AR</li>
+                <li>FA</li>
+                <li>NL</li>
+                <li>KO</li>
+                <li>CS</li>
+                <li>VI</li>
+                <li>ID</li>
+                <li>EL</li>
+                <li>SV</li>
+            </ul>
+            <div class="video-div">
+                <div class="video-bg"></div>
+                <div id="ytplayer" class="hidden">
+                </div>
+                <div class="play-div">
+                    <img src="img/play.png" alt="">
+                </div>
+            </div>
+		</div>
+		
+		<div class="contact__form">
+            <form action="">
+                <input id="name" name="name" type="text" placeholder="Имя">
+                <div class="error-box"></div>
+                <input id="email" name="email" type="email" placeholder="Email">
+                <div class="error-box"></div>
+                <div id="agree_div" class="agree-div">
+                    <span class="agree-sp"><input type="checkbox" id="agree" class="agree" checked=""></span>
+                    <label for="agree" class="agree-lbl"><a href="/agreement/" target="_blank">Согласие на обработку персональных данных</a></label>
+                </div>
+                <input id="btn-try" type="submit" value="Попробовать бесплатно">                
+            </form>            
+        </div>
+
+		<div class="social__network">			
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+		</div>
+		
+	</div>
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+<!--	<script src="https://www.youtube.com/iframe_api"></script>-->
+    <script src="js/common.js"></script>
+	<script>
+		$('.fancybox').fancybox();
+
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        $('.play-div img').click(function(){
+            $(this).parent().addClass('hidden');
+            $(this).parent().siblings('.video-bg').addClass('hidden');
+            $(this).parent().siblings('#ytplayer').removeClass('hidden');
+            player.playVideo();
+        });
+        
+        var iframeWidth = 540;
+        var iframeHeight = 300;        
+        
+        function windowSize() {
+            if ($(window).width() <= 767) {
+                iframeWidth = $(window).width() - 20;
+                iframeHeight = iframeWidth/2;
+                $('.video-div').css('width', iframeWidth).css('height',iframeHeight);
+            } else {
+                iframeWidth = 540;
+                iframeHeight = 300;
+                $('.video-div').css('width', iframeWidth).css('height',iframeHeight);
+            }
+        };
+        
+        function onYouTubeIframeAPIReady(iframeWidth, iframeHeight) {
+            player = new YT.Player('ytplayer', {
+//                width: iframeWidth,
+//                height: iframeHeight,
+                videoId: 'V4pKVOqUlnY'
+            });
+        }
+        
+        // Изменение размеров окна
+        $(window).load(windowSize); // при загрузке
+        $(window).resize(windowSize); // при изменении размеров css('position','relative')
+	</script>
+</body>
+</html>
