@@ -1,0 +1,217 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1275px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 800px) {
+	.sidebar__nav {
+		max-width: 360px;
+	}
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.specialist__block .sp_bl {
+		margin-bottom: 10px;
+	}
+	.support-ticket-edit-form table,
+	.support-ticket-edit-form thead,
+	.support-ticket-edit-form tbody,
+	.support-ticket-edit-form tfoot,
+	.support-ticket-edit-form td,
+	.support-ticket-edit-form tr {
+		display: block;
+	}
+	.overrides .message-form [type="text"], .overrides .message-form textarea {
+		width: 100%;
+	}
+	table.support-ticket-edit-form td.field-name {
+		text-align: left;
+	}
+	.marketing__research__block .courses__left {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.marketing__research__block .courses__right {
+		display: block;
+	}
+	.marketing__research__block .courses {
+		display: block;
+	}
+	.site .content .marketing__research__block .courses .courses__left {
+		height: auto !important;
+	}
+	.text__audio {
+		top: 60px;
+		height: 440px;
+		overflow: auto;
+	}
+	.text__audio h1 {
+		font-size: 24px;
+	}
+	.text__audio h3 {
+		font-size: 18px;
+	}
+	.text__audio p {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width : 640px) {
+	.desktop__search_btn {
+		display: none;
+	}
+	.mobile__search_btn {
+		display: block;
+	}
+	.specialist__block .sp_bl {
+		float: none;
+		margin: 0 auto 10px;
+	}
+	.specialist__block {
+		width: auto;
+	}
+	.form__contact_block label span {
+		float: none;
+		text-align: left;
+		padding-bottom: 5px;
+	}
+	.form__contact_block label input[type='text'] {
+		width: 100%;
+	}
+	.form__contact_block label textarea {
+		width: 100%;
+	}
+	.hint span {
+		right: -160px;
+		width: 145px;
+	}
+	
+}
+@media only screen and (max-width : 580px) {
+	.header .site__title {
+		position: absolute;
+		top: 8px;
+		left: 0;
+	}
+	.search__block input[type="text"] {
+		background: #fff;
+		display: none;
+	}
+	.input__pole {
+		margin: 0 38px 0 8px;
+		position: relative;
+		z-index: 9;
+	}
+	.hint span.leng__hint {
+		right: -125px;
+		width: 110px;
+		z-index: 999;
+	}
+	.set__box {
+		padding-left: 25px;
+		margin: 0;
+	}
+	.set__box .close__bt {
+		top: 10px;
+		right: 20px;
+	}
+	.quest__i {
+		right: -25px;
+	}
+	.audio_b {
+		font-size: 25px;
+	}
+	.text__audio {
+		top: 40px;
+	}
+}
+@media only screen and (max-width : 540px) {
+	.content__restaurant_bs .restaurant__sidebar {
+		float: none;
+		margin: 0 auto;
+	}
+	.restaurant__content {
+		padding-left: 10px;
+	}
+	.sidebar__nav {
+		width: 180px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.site__title span {
+		display: none;
+	}
+	.nav__btn li .sidebar__nav {
+		width: 180px;
+	}
+	.left__sidebar_box {
+		max-width: 260px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
