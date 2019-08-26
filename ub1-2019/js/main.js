@@ -189,12 +189,3 @@ window.onresize = function() {
         }
     }
 };
-
-
-
-// бургер меню
-
-let burger = document.querySelector('.personal-burger');
-burger.addEventListener('click', function () {
-    $('.personal-menu').slideToggle();
-});
