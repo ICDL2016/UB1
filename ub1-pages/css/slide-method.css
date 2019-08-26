@@ -1,0 +1,295 @@
+/* All new styles */
+body {
+    background: #fff;
+}
+
+.header-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+}
+
+.logo-div {
+    width: 220px;
+    padding: 10px;
+}
+
+.logo-div a {
+    display: inline-block;
+}
+
+.logo-div img {
+    width: 100%;
+}
+
+.language-block {
+    display: flex;
+}
+
+.language-div {
+    position: relative;
+}
+
+.language {
+    width: 41px;
+    text-align: center;
+}
+
+.language, 
+.enter-div {     
+    color: #777;
+    font-weight: bold;    
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;        
+    line-height: 33px;
+    display: block;
+    text-align: center;
+}
+
+.language:hover, 
+.enter-div:hover {
+    color: #fff;
+    background: #999;
+}
+
+.enter-div {
+    margin: 0 10px;
+    padding: 5px 15px 3px;
+}
+
+.enter-div a {
+    display: inline-block;
+    color: #777;
+    text-decoration: none;
+    transition: none;
+}
+
+.enter-div a:hover {
+    color: #fff;
+}
+
+.lang__list {
+    display: none;
+    position: absolute;     
+    list-style: none;
+    z-index: 100;
+}
+
+.lang__list li {
+    display: block;
+    margin-top: 5px;
+    padding: 9px;   
+    text-align: center;
+    font-weight: bold;    
+    background: #ccc;
+}
+
+.lang__list li:hover {
+    cursor: pointer;
+    background: #999;
+}
+
+.lang__list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: -50px;
+    border-top: none;
+}
+
+.restaurant__content {
+    background: #fff;
+    padding: 10px 0 0;
+}
+
+.restaurant__content h2 {
+    margin: 0;
+    color: #ec220a;
+    line-height: 1em;
+    font-size: 1.6em;
+}
+
+.content .languages-string-div {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.languages-string-div li {
+    display: inline-block;
+    margin-right: 1px;
+    color: #777; 
+    font-size: 0.7em;
+}
+
+.languages-string-div li:last-child {
+    margin-right: 0;
+}
+
+.video-div {
+    position: relative;
+    width: 540px;
+    height: 300px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.video-div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #111;
+    z-index: -10;
+}
+
+.play-div {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    max-height: 300px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 270px);
+    margin: auto;
+    text-align: center;    
+}
+
+.play-div img {
+    width: 100px;
+}
+
+.play-div img:hover {
+    cursor: pointer;
+}
+
+.contact__form {
+    margin-bottom: 15px;    
+}
+
+.contact__form form {
+    background: #ec220a;
+    background: #ccc;    
+}
+
+.contact__form form:hover {
+    background: #ec220a;
+    background: #ccc;
+}
+
+.contact__form form input:not([type="submit"]) {
+    border-color: #ec220a;
+    border-color: #ccc;
+}
+
+.agree-div {    
+    margin-top: 2px;
+}
+
+.agree-sp {
+    display: inline-block;
+    margin: 8px 7px 10px 0;
+    float: left;
+    padding: 0 !important;
+}
+
+.agree-sp input {
+    margin: 0;
+    display: inline-block;
+    width: 20px;    
+}
+
+#email {
+    margin-bottom: 0;
+}
+
+.agree-lbl {
+    display: inline-block;
+    width: calc(100% - 30px);
+    color: #fff;
+    text-align: left;    
+    float: left;
+    font-size: 10px;
+    font-style: italic;
+    margin: 8px 0;
+    line-height: 11px;
+}
+
+.agree-lbl a {
+    display: inline;
+    color: #fff;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+#btn-try {
+    background: #ec220a;
+    width: calc(100% + 20px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+.social__network {
+    padding-bottom: 0;
+}
+
+.social__network a:hover {
+    background: #ec220a;    
+}
+
+.hidden {
+    display: none!important;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+    .logo-div {
+        width: 180px;        
+    }
+    .enter-div {
+        margin: 0;    
+    }
+    .content {
+        margin-top: 0px;        
+    }
+    .restaurant__content h2 {
+        font-size: 1.4em;
+    }
+    .languages-string-div {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .play-div {                
+        left: 10px;   
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+    .play-div img {
+        width: 80px;
+    }
+    .video-div {        
+        margin: 20px 0 10px;        
+    }
+}
