@@ -138,7 +138,7 @@
     <div class="course-main__item course-item">
         <a href="#test" class="course-item__in">
             <div class="course-item__img"><img src="img/course.jpg" alt="course"></div>
-            <h3 class="course-item__title">Дистанционный курс «МАРКЕТИНГОВЫЙ АНАЛИЗ»</h3>
+            <h3 class="course-item__title">Дистанционный курс «ПРЕДПРИНИМАТЕЛЬСТВО»</h3>
             <div class="course-item__info">
                 <div class="course-item__duration">200 часов</div>
                 <div class="course-item__price">12500 <i class="fa fa-rub"></i></div>

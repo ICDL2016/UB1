@@ -159,7 +159,7 @@ iframe {
     margin: 0;
     color: #215fc6;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 20px;
     min-height: 100px;
     font-weight: bold; }
@@ -169,10 +169,10 @@ iframe {
     overflow: hidden; }
   .course-item__duration {
     float: left;
-    font-size: 17px; }
+    font-size: 15px; }
   .course-item__price {
     float: right;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 17px; }
   .course-item__in {
     display: block;
