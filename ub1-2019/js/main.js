@@ -31,7 +31,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function play1(event) {
-    event.target.style.display = 'none';
+    event.target.parentElement.style.display = 'none';
     $('#divPlayer1').show();
     $('iframe').css('display', 'block');
     player1.playVideo();

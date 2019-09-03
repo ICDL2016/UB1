@@ -1,7 +1,7 @@
 .video
     padding: 15px 0 0 0
     background: $light
-    &-block
+    &-wrapper
         margin: auto
         width: 100%
         background: url(../img/video-bg.jpg) center no-repeat
@@ -10,21 +10,18 @@
         background-position-y: 0
         height: 300px
         position: relative
-        pointer-events: none
-        &::after
-            content: ''
-            position: absolute
-            top: 50%
-            left: 48%
-            transform: translateY(-50%)
-            border: 50px solid transparent
-            border-left: 80px solid $blue
-            pointer-events: all
-            cursor: pointer
-            transition: border .3s
+    &-block
+        content: ''
+        position: absolute
+        top: 50%
+        left: 47%
+        transform: translateY(-50%)
+        border: 50px solid transparent
+        border-left: 80px solid $blue
+        cursor: pointer
+        transition: border .3s
         &:hover
-            &::after
-                border-left: 80px solid darken($blue, 10)
+            border-left: 80px solid darken($blue, 10)
 
 #divPlayer1
     display: none

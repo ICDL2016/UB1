@@ -72,14 +72,10 @@
 </section>
 
 <div class="contacts-gallery">
-    <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/1.jpg)"></a>
-    <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/2.jpg)"></a>
-    <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/3.jpg)"></a>
-    <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/4.jpg)"></a>
-    <a href="img/contacts/5.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/5.jpg)"></a>
-    <a href="img/contacts/6.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/6.jpg)"></a>
-    <a href="img/contacts/7.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/7.jpg)"></a>
-    <a href="img/contacts/8.jpg" class="fancybox-buttons" data-fancybox-group="button" style="background-image: url(img/contacts/8.jpg)"></a>
+    <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>
+    <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>
+    <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>
+    <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>
 </div>
 
 <div style="margin-bottom: 30px"></div>

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
     <link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-    <link rel="stylesheet" href="sass/style.css?v=7">
+    <link rel="stylesheet" href="sass/style.css?v=14">
 </head>
 <body>
 
