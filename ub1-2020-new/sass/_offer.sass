@@ -1,0 +1,122 @@
+.offer
+    padding-top: 30px
+    margin-bottom: 30px
+    &-blocks
+        margin: auto
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        width: calc(190px*8)
+    &-block
+        margin: 5px
+        width: 180px
+        text-align: center
+        overflow: hidden
+        cursor: pointer
+        &:hover
+            .offer-title
+                background: $dark
+                color: #fff
+                &::before
+                    border-bottom: 20px solid rgba($dark, .9)
+            .offer-info
+                background: #00a0fd
+                color: #fff
+    &-img
+        height: 160px
+    &-title
+        padding: 10px 5px
+        font-size: 14px
+        color: $dark
+        background: $light
+        transition: color .3s, background .3s
+        position: relative
+        font-weight: 500
+        &::before
+            content: ''
+            position: absolute
+            top: -109px
+            left: 0
+            border: 90px solid transparent
+            border-bottom: 20px solid rgba($light, .9)
+            transition: border-bottom .3s
+    &-info
+        padding: 5px 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #e9edf6
+        transition: color .3s, background .3s
+        color: $dark
+        .fa-clock-o
+            margin-bottom: 7px
+            font-size: 20px
+    &-hours
+        margin-top: 1px
+        margin-left: 5px
+        line-height: .5
+        font-size: 12px
+        span
+            display: block
+    &-price
+        margin-bottom: 3px
+        margin-left: 15px
+        font-size: 20px
+        font-weight: 700
+        span
+            font-size: 22px
+            margin-bottom: -2px
+        i, span
+            vertical-align: middle
+    &-more
+        margin: 20px auto 0
+        width: 240px
+        padding: 10px
+        text-align: center
+        border: 1px solid $dark
+        -webkit-border-radius: 30px
+        -moz-border-radius: 30px
+        border-radius: 30px
+        color: $dark
+        a
+            color: $dark
+            text-decoration: underline
+            transition: color .3s
+            &:hover
+                color: $light
+
+@media screen and (max-width: 1529px)
+    .offer
+        &-blocks
+            width: calc(190px*7)
+
+@media screen and (max-width: 1339px)
+    .offer
+        &-blocks
+            width: calc(190px*6)
+
+@media screen and (max-width: 1149px)
+    .offer
+        &-blocks
+            width: calc(190px*5)
+
+@media screen and (max-width: 959px)
+    .offer
+        &-blocks
+            width: calc(190px*4)
+
+@media screen and (max-width: 769px)
+    .offer
+        &-blocks
+            width: calc(190px*3)
+
+@media screen and (max-width: 579px)
+    .offer
+        &-blocks
+            width: calc(190px*2)
+
+@media screen and (max-width: 389px)
+    .offer
+        &-blocks
+            width: 100%
+            justify-content: center

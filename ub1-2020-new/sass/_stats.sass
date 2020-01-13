@@ -1,0 +1,31 @@
+.stats
+    padding: 40px 0
+    background: url(../img/stats/stats-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-blocks
+        display: flex
+        justify-content: space-between
+    &-block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 215px
+        height: 320px
+        background: url(../img/stats/stats-romb.png) center no-repeat
+        -webkit-background-size: contain
+        background-size: contain
+        text-align: center
+        &:nth-child(odd)
+            margin-top: 45px
+        img
+            margin-bottom: 15px
+    &-text
+        color: #fff
+        font-size: 18px
+        span
+            display: block
+            line-height: .8
+            font-size: 60px
+            font-weight: 700

@@ -1,0 +1,83 @@
+.clients
+    padding: 40px 0
+    &-title
+        line-height: 1
+        margin-right: auto
+        margin-left: auto
+        max-width: 600px
+        color: #1f1f1f
+        &::after
+            background: $dark
+    &-subtitle
+        margin-bottom: 30px
+        &::after, &::before
+            display: none
+    &-slide
+        margin: auto
+    &-slider
+        .owl-nav
+            height: 0!important
+            display: block!important
+    &-img
+        text-align: center
+        img
+            margin: auto
+            width: 150px!important
+
+.slider
+    margin: auto
+    width: 220px
+
+@media screen and (max-width: 991px)
+    .clients
+        &-title
+            &::before
+                left: 0
+                width: 25px
+            &::after
+                right: 0
+                width: 25px
+
+@media screen and (max-width: 767px)
+    .clients
+        &-title
+            &::before
+                top: 15px
+            &::after
+                top: 15px
+
+@media screen and (min-width: 440px)
+    .slider
+        width: 340px
+
+@media screen and (min-width: 610px)
+    .slider
+        width: 510px
+
+@media screen and (min-width: 780px)
+    .slider
+        width: 680px
+
+@media screen and (min-width: 950px)
+    .slider
+        width: 850px
+
+@media screen and (min-width: 1120px)
+    .slider
+        width: 1020px
+
+@media screen and (min-width: 1290px)
+    .slider
+        width: 1190px
+
+@media screen and (min-width: 1460px)
+    .slider
+        width: 1360px
+
+@media screen and (min-width: 1630px)
+    .slider
+        width: 1530px
+
+@media screen and (min-width: 1800px)
+    .slider
+        width: 1700px

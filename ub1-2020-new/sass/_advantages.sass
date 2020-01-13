@@ -1,0 +1,67 @@
+.advantages
+    padding-bottom: 50px
+    background: url(../img/advantages/advantages-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-blocks
+        display: flex
+        justify-content: center
+        margin-top: -1px
+        padding-bottom: 80px
+        overflow: hidden
+
+    &-block
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        padding: 40px 30px 0 30px
+        width: 20%
+        height: 301px
+        background: #fff
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: -129px
+            border: 94px solid transparent
+            border-top: 35px solid #fff
+        &:nth-child(even)
+            height: 331px
+        &:nth-child(3)
+            height: 361px
+            box-shadow: -10px -21px 8px -6px rgba(#ccc, 0.75)
+        &:nth-child(2)
+            box-shadow: -10px -21px 8px -6px rgba(#ccc, 0.75)
+        &:nth-child(4), &:nth-child(5)
+            margin-left: 1px
+
+    &-img
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $dark
+        padding: 20px
+        width: 130px
+        height: 130px
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+    &-header
+        font-size: 17px
+        text-align: center
+        color: #252525
+    &-steps
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+    &-step
+        display: flex
+        align-items: flex-start
+        color: #fff
+        &__info
+            &-img
+                margin-bottom: 20px
+        &__number
+            margin-right: 5px

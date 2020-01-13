@@ -1,0 +1,75 @@
+.footer
+    padding: 20px 0
+    background: url(../img/footer/footer-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-menu
+        &__title
+            margin-bottom: 30px
+            font-size: 20px
+            color: #fff
+            position: relative
+            &::after
+                content: ''
+                width: 40px
+                background: $light
+                position: absolute
+                left: 0
+                bottom: -10px
+                height: 3px
+        &__list
+            li
+                font-weight: 300
+                margin-bottom: 5px
+                font-size: 18px
+                a
+                    color: #fff
+                    &:hover
+                        text-decoration: none
+                        color: $light
+    &-social
+        margin-bottom: 15px
+        font-size: 20px
+        width: 160px
+    &-address
+        color: #fff
+        font-weight: 300
+        font-size: 16px
+        i
+            margin-right: 5px
+            color: $light
+            font-size: 20px
+    &-about
+        margin-bottom: 10px
+        font-weight: 300
+        font-size: 12px
+        color: #fff
+        font-style: italic
+    &-phone
+        display: flex
+        align-items: center
+        i
+            font-size: 20px
+            margin-right: 15px
+            color: $light
+        &__text
+            margin-bottom: 5px
+            font-weight: 300
+            color: #fff
+            font-size: 12px
+        &__number
+            font-size: 25px
+            transition: color .3s
+            color: #fff
+            &:hover
+                color: $light
+                text-decoration: none
+    &-bottom
+        &__left
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__social
+            margin-bottom: 0
+    &-border
+        border-bottom: 1px solid rgba($light, .2)

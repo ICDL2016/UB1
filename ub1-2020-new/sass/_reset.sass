@@ -1,0 +1,91 @@
+body
+    font-family: "Helvetica Neue", sans-serif
+
+div, span
+    line-height: 1.2
+
+input, button, input:focus, button:focus
+    outline: none
+
+ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+
+a, a:hover
+    text-decoration: none
+
+.title
+    margin-bottom: 50px
+    font-size: 35px
+    position: relative
+    color: #fff
+    text-align: center
+    line-height: 1
+    &::after
+        content: ''
+        position: absolute
+        width: 70px
+        left: 50%
+        height: 3px
+        background: #fff
+        bottom: -20px
+        transform: translateX(-50%)
+        font-weight: 300
+
+.arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    height: 70px
+    width: 35px
+    background: $light
+    top: 50%
+    transform: translateY(-50%)
+    transition: background .3s
+    &:hover
+        background: $dark
+    &-right
+        right: -45px
+    &-left
+        left: -45px
+
+.people
+    background: url(../img/people.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    height: 350px
+
+.button
+    padding: 10px
+    background: $dark
+    overflow: hidden
+    transition: background .3s
+    position: relative
+    border-radius: 30px
+    font-weight: 300
+    text-align: center
+    max-width: 350px
+    color: #fff
+    cursor: pointer
+    span
+        display: block
+        font-weight: 400
+    &::after, &::before
+        content: ''
+        position: absolute
+        background: $light
+        transition: background .3s
+        top: 0
+        height: 100%
+        width: 20px
+    &::before
+        left: 0
+    &::after
+        right: 0
+    &:hover
+        background: $light
+        &::after, &::before
+            background: $dark
+
