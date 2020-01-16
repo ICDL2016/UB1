@@ -29,3 +29,39 @@
             line-height: .8
             font-size: 60px
             font-weight: 700
+
+@media screen and (max-width: 991px)
+    .stats
+        &-blocks
+            margin: auto
+            width: 510px
+            flex-wrap: wrap
+            justify-content: center
+        &-block
+            margin: 0 20px
+            &:nth-child(3)
+                margin-top: -10px
+            &:nth-child(4)
+                margin-top: -55px
+
+@media screen and (max-width: 575px)
+    .stats
+        padding: 10px 0
+        &-blocks
+            max-width: 300px
+        &-block
+            margin: 0 7px
+            width: 130px
+            height: 215px
+            &:nth-child(1)
+                margin-top: 20px
+            &:nth-child(3)
+                margin-top: -35px
+            img
+                margin-bottom: 5px
+                width: 45px
+        &-text
+            font-size: 14px
+            span
+                line-height: 1
+                font-size: 40px

@@ -25,3 +25,26 @@
             width: 30%
             img
                 width: 100%
+
+@media screen and (max-width: 991px)
+    .fast
+        &-img
+            a:first-child
+                margin-bottom: 0
+
+@media screen and (max-width: 767px)
+    .fast
+        &-img
+            a, a:first-child, a:nth-child(2)
+                width: 33%
+                margin: 0
+
+@media screen and (max-width: 575px)
+    .fast
+        &-img
+            justify-content: center
+            a
+                margin-bottom: 10px!important
+                width: 300px!important
+                img
+                    width: 100%

@@ -15,12 +15,95 @@
         display: flex
         justify-content: center
         align-items: center
+        &__wrapper
+            position: relative
+        &__menu
+            display: none
+            width: 300px
+            border-radius: 10px
+            position: absolute
+            top: 70px
+            padding: 10px 0
+            background: $dark
+            z-index: 99
+            li
+                a
+                    padding: 5px 15px
+                    display: block
+                    width: 100%
+                    color: #fff
+                    font-weight: 300
+                    font-size: 18px
+                    transition: background .3s
+                    &:hover
+                        background: $light
+            &::after
+                content: ''
+                position: absolute
+                top: -15px
+                left: 15px
+                border: 10px solid transparent
+                border-bottom: 10px solid $dark
         i
             color: $light
             font-size: 50px
             margin-right: 60px
             cursor: pointer
+            transition: color .3s
+            &:hover
+                color: #fff
     &-logo
         a
             img
                 height: 40px
+    &-login
+        a
+            svg
+                .fil2
+                    transition: fill .3s
+        &:hover
+            a
+                svg
+                    .fil2
+                        fill: $light
+
+@media screen and (max-width: 767px)
+    .header
+        &-social
+            display: none
+
+@media screen and (max-width: 575px)
+    .header
+        &-login
+            a
+                svg
+                    height: 30px
+                    width: 30px
+        &-burger
+            &__menu
+                top: 50px
+                left: -12px
+                background: #fff
+                width: 290px
+                &::after
+                    border: 10px solid transparent
+                    border-bottom: 10px solid #fff
+                li
+                    a
+                        color: #000
+                        margin: auto
+                        width: 90%
+                        text-align: center
+                        &:hover
+                            -webkit-border-radius: 30px
+                            -moz-border-radius: 30px
+                            border-radius: 30px
+                            background: $dark
+                            color: #fff
+            i
+                font-size: 30px
+                margin-right: 15px
+        &-logo
+            a
+                img
+                    height: 25px

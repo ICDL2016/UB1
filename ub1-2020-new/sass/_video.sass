@@ -40,8 +40,15 @@
     &-play
         margin-bottom: 10px
         cursor: pointer
-        img
-            width: 100px
+        svg
+            width: 80px
+            .fil0, .fil1
+                transition: fill .3s
+            &:hover
+                .fil0
+                    fill: $dark
+                .fil1
+                    fill: $light
     &-all
         margin: auto
         padding: 15px 25px
@@ -72,3 +79,74 @@
 
 #divPlayer1
     display: none
+
+@media screen and (max-width: 991px)
+    .video
+        height: 350px
+        &-title
+            margin-bottom: 15px
+            font-size: 35px
+            &__arrow
+                display: none
+        &-pic
+            height: 325px
+        &-play
+            svg
+                height: 80px
+        &-form
+            margin-bottom: 10px
+        &-all
+            z-index: 1
+
+@media screen and (max-width: 767px)
+    .video
+        height: 450px
+        &-title
+            margin-bottom: 220px
+            font-size: 25px
+        &-wrapper
+            width: 100%
+        &-play
+            svg
+                width: 60px
+                height: 60px
+        &-pic
+            height: 215px
+            bottom: 100px
+            left: 50%
+            transform: translateX(-50%)
+        &-form
+            &__input
+                padding: 7px 15px
+            i
+                font-size: 20px
+        &-all
+            padding: 10px 25px
+
+@media screen and (max-width: 575px)
+    .video
+        .container
+            padding-top: 15px
+        &-play
+            svg
+                width: 50px
+                height: 50px
+        &-title
+            margin-bottom: 245px
+        &-all
+            padding: 10px
+            font-size: 16px
+            width: 290px
+            &__arrow
+                width: 40px
+                img
+                    width: 20px
+        &-form
+            width: 290px
+            &__input
+                width: 290px
+
+@media screen and (max-width: 396px)
+    .video
+        &-title
+            margin-bottom: 215px

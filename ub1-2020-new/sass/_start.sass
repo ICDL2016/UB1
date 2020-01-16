@@ -18,4 +18,23 @@
         left: 410px
         bottom: -40px
         z-index: -1
-        
+
+@media screen and (max-width: 991px)
+    .start
+        &-block
+            margin: auto
+            width: 100%
+        &-text
+            margin-bottom: 300px
+            font-size: 20px
+        &-photo
+            width: 300px
+            bottom: 55px
+            left: 50%
+            transform: translateX(-50%)
+
+@media screen and (max-width: 575px)
+    .start
+        padding: 10px 0
+        &-icon
+            display: none

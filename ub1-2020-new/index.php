@@ -24,15 +24,15 @@
 
       function onYouTubeIframeAPIReady() {
 
-          if($(window).width() < 576) {
+          if($(window).width() < 768) {
               player1 = new YT.Player('divPlayer1', {
-                  height: '350',
+                  height: '450',
                   width: '100%',
                   videoId: 'd8Oc90QevaI',
               });
-          } else if ($(window).width() < 768) {
+          } else if ($(window).width() < 992) {
               player1 = new YT.Player('divPlayer1', {
-                  height: '400',
+                  height: '350',
                   width: '100%',
                   videoId: 'd8Oc90QevaI',
               });

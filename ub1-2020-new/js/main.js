@@ -41,4 +41,10 @@ $(document).ready(function () {
         }
     });
 
+    //бургер-меню
+    $('.burger-icon').on('click', function () {
+       $(this).toggleClass('burger-white');
+       $('.header-burger__menu').slideToggle();
+    });
+
 });

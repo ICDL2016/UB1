@@ -35,3 +35,28 @@
             width: 100%
             left: 0
             bottom: -7px
+
+@media screen and (max-width: 767px)
+    .reviews
+        &-block
+            padding-bottom: 10px
+            border-bottom: 1px solid rgba($light,.5)
+            &:nth-child(even)
+                .reviews-info
+                    align-items: flex-start
+                    text-align: left
+                .reviews-img
+                    margin: 0 20px 0 0
+        &-info
+            order: 1
+
+@media screen and (max-width: 767px)
+    .reviews
+        padding-top: 20px
+        &-img
+            img
+                width: 80px
+        &-author
+            font-size: 15px
+        &-text
+            font-size: 13px

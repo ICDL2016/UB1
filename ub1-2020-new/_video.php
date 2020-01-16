@@ -2,7 +2,7 @@
   <div class="container position-relative">
     <div class="video-wrapper">
       <div class="video-play" onclick="play1(event)">
-        <img src="img/video/video-play.png" alt="play">
+        <?php require_once 'img/video/play.svg'; ?>
       </div>
 
       <div class="video-title">

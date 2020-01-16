@@ -9,6 +9,8 @@
         margin-top: -1px
         padding-bottom: 80px
         overflow: hidden
+        &__mobile
+            display: none
 
     &-block
         display: flex
@@ -65,3 +67,81 @@
                 margin-bottom: 20px
         &__number
             margin-right: 5px
+
+@media screen and (max-width: 991px)
+    .advantages
+        &-img
+            width: 100px
+            height: 100px
+            img
+                width: 60px
+        &-block
+            &::after
+                bottom: -105px
+                border: 71px solid transparent
+                border-top: 35px solid #fff
+        &-step
+            &__info
+                &-text
+                    font-size: 13px
+
+@media screen and (max-width: 767px)
+    .advantages
+        &-title
+            padding-top: 700px
+        &-steps
+            margin: auto
+            width: 420px
+            flex-wrap: wrap
+        &-step
+            margin-left: 120px
+            margin-bottom: 25px
+            width: 100%
+        &-blocks
+            display: none
+            &__mobile
+                display: block
+                padding-top: 20px
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                background: #fff
+                svg
+                    position: absolute
+                    width: 100%
+                    bottom: -111px
+        &-block
+            &__mobile
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: auto
+                padding: 10px 0
+                width: 310px
+                border-bottom: 1px solid rgba($light, .5)
+                &:last-child
+                    border: none
+                &:nth-child(odd)
+                    .advantages-header
+                        text-align: left
+                        margin-left: 15px
+                &:nth-child(even)
+                    .advantages-header
+                        margin-right: 15px
+                        text-align: right
+        &-img
+            margin-bottom: 0
+
+@media screen and (max-width: 575px)
+    .advantages
+        &-blocks
+            &__mobile
+                padding-top: 10px
+
+@media screen and (max-width: 420px)
+    .advantages
+        &-steps
+            width: 200px
+        &-step
+            margin-left: 0

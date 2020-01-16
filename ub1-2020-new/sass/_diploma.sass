@@ -18,7 +18,72 @@
         align-items: center
         max-width: 700px
         color: #fff
+        &__mobile
+            display: none
         &__text
             margin-right: 20px
             span
                 display: block
+
+@media screen and (max-width: 991px)
+    .diploma
+        &-img
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            a
+                width: 50%
+            a:first-child
+                margin-bottom: 20px
+        &-license
+            display: none
+            &__mobile
+                display: flex
+                flex-direction: column
+                justify-content: center
+                width: 50%
+                a
+                    width: 100%
+                    order: 0
+            &__text
+                margin: 20px 0 0
+                color: #fff
+                order: 1
+                font-weight: 300
+                font-size: 14px
+                span
+                    display: inline
+
+@media screen and (max-width: 767px)
+    .diploma
+        &-title
+            font-size: 20px
+        &-img
+            a
+                &:first-child, &:nth-child(2)
+                    margin-bottom: 20px
+                    width: 100%
+
+@media screen and (max-width: 575px)
+    .diploma
+        padding: 20px 0
+        &-license
+            &__text
+                margin-top: 0
+        &-img
+            a
+                display: block
+                text-align: center
+            &1, &2
+                margin: 0 auto 20px!important
+                width: 290px!important
+                img
+                    width: 100%
+            &3
+                display: flex
+                img
+                    align-self: center
+                    width: 120px
+            &4
+                display: block
+                text-align: center

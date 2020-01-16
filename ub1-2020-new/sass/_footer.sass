@@ -3,6 +3,9 @@
     background: url(../img/footer/footer-bg.png) center no-repeat
     -webkit-background-size: cover
     background-size: cover
+    &-logo
+        &__mobile
+            display: none
     &-menu
         &__title
             margin-bottom: 30px
@@ -31,6 +34,8 @@
         margin-bottom: 15px
         font-size: 20px
         width: 160px
+        &__mobile
+            display: none
     &-address
         color: #fff
         font-weight: 300
@@ -73,3 +78,68 @@
             margin-bottom: 0
     &-border
         border-bottom: 1px solid rgba($light, .2)
+    &-copyright
+        display: none
+        color: #fff
+        text-align: center
+        font-weight: 300
+
+@media screen and (max-width: 991px)
+    .footer
+        &-address
+            font-size: 14px
+        &-bottom
+            &__left
+                justify-content: space-around
+
+@media screen and (max-width: 991px)
+    .footer
+        &-menu
+            &__title
+                display: none
+            &__list
+                margin-bottom: 40px
+                li
+                    a
+                        margin: auto
+                        padding: 5px
+                        display: block
+                        width: 250px
+                        text-align: center
+                        font-size: 25px
+                        transition: background-color .3s, color .3s
+                        border-radius: 30px
+                        font-weight: 400
+                        &:hover
+                            background: rgba(#fff, .5)
+                            color: $dark
+
+        &-about
+            display: none
+        &-address
+            margin-bottom: 20px
+            text-align: center
+            font-size: 18px
+        &-social
+            &__mobile
+                display: flex
+                width: 250px
+                font-size: 30px
+                margin: 0 auto 20px
+        &-phone
+            justify-content: center
+            &__text
+                font-size: 18px
+        &-copyright
+            display: block
+        &-logo
+            display: none
+            &__mobile
+                display: block
+                margin-bottom: 30px
+                text-align: center
+                img
+                    width: 290px
+        &-bottom
+            &__left
+                display: none
