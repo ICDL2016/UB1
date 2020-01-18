@@ -55,9 +55,11 @@
         text-align: center
         color: #252525
     &-steps
+        margin: auto
         display: flex
         justify-content: space-around
         align-items: flex-start
+        max-width: 960px
     &-step
         display: flex
         align-items: flex-start
@@ -90,13 +92,18 @@
         &-title
             padding-top: 700px
         &-steps
+            padding: 0 10px
             margin: auto
-            width: 420px
-            flex-wrap: wrap
-        &-step
-            margin-left: 120px
-            margin-bottom: 25px
             width: 100%
+        &-step
+            padding: 0 2px
+            margin-bottom: 25px
+            &__number
+                img
+                    height: 100px
+            &__info
+                &-img
+                    margin-bottom: 5px
         &-blocks
             display: none
             &__mobile
@@ -135,6 +142,11 @@
 
 @media screen and (max-width: 575px)
     .advantages
+        &-steps
+            width: 200px
+            flex-wrap: wrap
+        &-step
+            width: 100%
         &-blocks
             &__mobile
                 padding-top: 10px

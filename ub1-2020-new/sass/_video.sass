@@ -71,6 +71,32 @@
             width: 54px
             background: $light
             cursor: pointer
+            transition: background-color .3s
+            &:hover
+                background: $dark
+        &__dark
+            background: $dark
+            img
+                transform: scaleY(-1)
+        &__list
+            display: none
+            position: absolute
+            left: 0
+            width: 100%
+            top: 54px
+            padding: 5px 0
+            z-index: 2
+            background: $light
+            li
+                a
+                    display: block
+                    width: 100%
+                    padding: 5px 15px
+                    font-weight: 400
+                    transition: background-color .3s, color .3s
+                    &:hover
+                        background: $dark
+                        color: #fff
     &-pic
         position: absolute
         bottom: 0
@@ -122,6 +148,8 @@
                 font-size: 20px
         &-all
             padding: 10px 25px
+            &__list
+                top: 44px
 
 @media screen and (max-width: 575px)
     .video
@@ -137,6 +165,8 @@
             padding: 10px
             font-size: 16px
             width: 290px
+            &__list
+                top: 39px
             &__arrow
                 width: 40px
                 img

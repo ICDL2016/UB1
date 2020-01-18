@@ -52,10 +52,8 @@ a, a:hover
         left: -45px
 
 .people
-    background: url(../img/people.png) center no-repeat
-    -webkit-background-size: cover
-    background-size: cover
-    height: 350px
+    img
+        width: 100%
 
 .button
     padding: 10px
@@ -86,6 +84,10 @@ a, a:hover
         right: 0
     &:hover
         background: $light
+        color: $dark
+        font-weight: 400
+        span
+            font-weight: 700
         &::after, &::before
             background: $dark
 
@@ -93,15 +95,15 @@ a, a:hover
     color: #fff!important
 
 @media screen and (max-width: 991px)
-    .people
-        height: 250px
+    //.people
+    //    height: 250px
 
 @media screen and (max-width: 767px)
     .title
         font-size: 25px
-    .people
-        height: 200px
+    //.people
+    //    height: 200px
 
 @media screen and (max-width: 767px)
-    .people
-        height: 120px
+    //.people
+    //    height: 120px

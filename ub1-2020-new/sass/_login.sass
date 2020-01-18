@@ -1,0 +1,152 @@
+.login
+    padding: 30px 0 15px
+    &-img
+        margin-bottom: 15px
+        img
+            width: 65px
+        &__mob
+            display: none
+    &-title
+        margin-bottom: 10px
+        font-size: 28px
+    &-auth
+        margin-bottom: 15px
+        font-size: 22px
+        &__remind
+            font-size: 16px
+    &-form
+        position: relative
+        &__form
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__password, &__email
+            margin-bottom: 10px
+            padding: 5px 10px
+            width: 350px
+            border: 1px solid $light
+        &::before, &::after
+            content: ''
+            position: absolute
+            width: 40px
+            height: 90%
+            border: 5px solid #add8b8
+            z-index: -1
+        &::before
+            top: 15px
+            left: 250px
+            border-right-color: #fff
+        &::after
+            top: 15px
+            right: 250px
+            border-left-color: #fff
+    &-btn
+        border: none
+        margin-top: 15px
+        width: 350px
+    &-remind
+        display: block
+        margin: 15px auto
+        text-align: center
+        color: $dark
+        &:hover
+            color: $dark
+            text-decoration: underline
+    &-button
+        box-shadow: none
+        &:hover
+            background: $light
+
+
+.login-form__form .form-checkbox + label:before
+    border: 1px solid $light
+
+.login-form__form .form-checkbox + label
+    color: #000
+
+.login-form__form .form-checkbox + label a
+    color: $light
+
+.login-form__form input::-webkit-input-placeholder
+    font-size: 14px
+
+.login-form__form input:-moz-placeholder
+    font-size: 14px
+
+.login-form .form-input__span-email
+    width: 350px
+    color: red
+
+.remind
+    &-border
+        height: 212px
+    &-hint
+        font-size: 17px
+
+@media (max-width: 991px)
+    .login
+        &-form
+            &::before
+                left: 140px
+            &::after
+                right: 140px
+
+@media (max-width: 991px)
+    .login
+        &-title
+            margin-bottom: 0
+
+@media (max-width: 767px)
+    .login
+        &-form
+            &::before
+                left: 50px
+            &::after
+                right: 50px
+
+@media (max-width: 575px)
+    .login
+        &-title
+            font-size: 20px
+            &__wrapper
+                margin: auto
+                padding-left: 50px
+                width: 290px
+                text-align: left
+                position: relative
+        &-img
+            display: none
+            &__mob
+                position: absolute
+                width: 40px
+                display: block
+                top: 0
+                left: 0
+                z-index: -1
+
+
+        &-auth
+            margin-bottom: 10px
+            font-size: 14px
+            &__remind
+                font-size: 11px
+        &-border
+            display: none
+        &-btn
+            margin-top: 5px
+            width: 290px
+        &-form
+            &__password, &__email
+                width: 290px
+            &::before, &::after
+                display: none
+
+    .login-form .form-input__span-email
+        width: 290px
+    .login-form__form .form-checkbox + label
+        font-size: 12px
+
+    .remind
+        &-hint
+            margin: 0 auto 10px
+            width: 200px
