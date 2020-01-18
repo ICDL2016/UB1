@@ -1,7 +1,9 @@
 <div class="start">
   <div class="container">
     <div class="start-block">
-      <img src="img/start/start-icon.png" alt="icon">
+      <div class="start-block__icon">
+        <img src="img/start/start-icon.png" alt="icon" class="start-icon">
+      </div>
       <div class="start-text">
         Получите новую специальность
         в <span>Университете Бизнеса №1

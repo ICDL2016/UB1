@@ -8,7 +8,9 @@
 <?php require_once '_fast.php';?>
 <?php require_once '_reviews.php';?>
 
-<div class="people"></div>
+<div class="people">
+  <img src="img/people.png" alt="people">
+</div>
 <?php require_once '_start.php';?>
 <?php require_once '_footer.php';?>
 <?php require_once '_scripts.php';?>

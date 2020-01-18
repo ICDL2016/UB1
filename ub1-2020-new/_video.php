@@ -20,6 +20,12 @@
         <div class="video-all__arrow">
           <img src="img/video/video-more.png" alt="more">
         </div>
+
+        <ul class="video-all__list">
+          <li><a href="">Вариант 1</a></li>
+          <li><a href="">Вариант 2</a></li>
+          <li><a href="">Вариант 3</a></li>
+        </ul>
       </div>
 
       <img src="img/video/video-girl.png" alt="girl" class="video-pic">

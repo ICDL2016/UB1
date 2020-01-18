@@ -114,14 +114,14 @@
             </a>
           </div>
           <div class="header-login footer-login">
-            <a href="login.php">
+            <a href="login.php" title="Вход в личный кабинет">
               <?php require 'img/header/login.svg'; ?>
             </a>
           </div>
         </div>
 
         <div class="footer-copyright">
-          Ub1 © 2001-2019  Все права защищены.
+          UB1 © 2001-2019
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="sass/style.css?v=2">
+  <link rel="stylesheet" href="sass/style.css?v=3">
 </head>
 <body>
   <header class="header">
@@ -56,7 +56,7 @@
         </a>
       </div>
       <div class="header-login">
-        <a href="login.php">
+        <a href="login.php" title="Вход в личный кабинет">
           <?php require 'img/header/login.svg'; ?>
         </a>
       </div>
