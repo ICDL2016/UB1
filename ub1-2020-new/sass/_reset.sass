@@ -55,12 +55,68 @@ a, a:hover
     img
         width: 100%
 
+.form
+    &-input
+        &__span
+            display: none
+            margin-top: -5px
+            padding: 0 0 5px 0
+            font-size: 9px
+            font-weight: 300
+            font-family: Arial, sans-serif
+            text-align: left
+            width: 100%
+            color: #fff
+            line-height: 1
+
+.form-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+    width: auto!important
+
+.form-checkbox + label
+    margin: 0 auto 15px
+    padding: 3px 0 3px 20px
+    position: relative
+    cursor: pointer
+    color: #fff
+    font-size: 14px
+    font-family: 'Roboto Light', sans-serif
+    a
+        text-decoration: underline
+        color: #fff
+
+.form-checkbox__block
+    text-align: center
+
+.form-checkbox + label:before
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    left: -6px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    width: 20px
+    height: 20px
+    background-color: #ffffff
+    text-align: center
+    color: $light
+
+.form-checkbox:checked + label:before
+    content: '\2714'
+
 .button
     padding: 10px
     background: $dark
     overflow: hidden
     transition: background .3s
     position: relative
+    border: none
     border-radius: 30px
     font-weight: 300
     text-align: center

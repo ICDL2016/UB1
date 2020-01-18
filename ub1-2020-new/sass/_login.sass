@@ -1,14 +1,20 @@
 .login
-    padding: 30px 0 15px
+    padding-top: 60px
+    padding-bottom: 60px
+
     &-img
         margin-bottom: 15px
         img
-            width: 65px
+            width: 50px
         &__mob
             display: none
     &-title
-        margin-bottom: 10px
+        margin: 0 auto 20px
+        padding: 0 5px
+        width: max-content
+        background: #fff
         font-size: 28px
+
     &-auth
         margin-bottom: 15px
         font-size: 22px
@@ -21,25 +27,19 @@
             flex-direction: column
             align-items: center
         &__password, &__email
-            margin-bottom: 10px
+            margin-bottom: 15px
             padding: 5px 10px
             width: 350px
             border: 1px solid $light
-        &::before, &::after
-            content: ''
-            position: absolute
-            width: 40px
-            height: 90%
-            border: 5px solid #add8b8
-            z-index: -1
-        &::before
-            top: 15px
-            left: 250px
-            border-right-color: #fff
-        &::after
-            top: 15px
-            right: 250px
-            border-left-color: #fff
+            border-radius: 5px
+    &-border
+        top: 15px
+        position: absolute
+        left: 50%
+        height: 85%
+        width: 450px
+        transform: translateX(-50%)
+        z-index: -1
     &-btn
         border: none
         margin-top: 15px
@@ -53,9 +53,10 @@
             color: $dark
             text-decoration: underline
     &-button
-        box-shadow: none
-        &:hover
-            background: $light
+        padding: 20px 10px
+        font-size: 18px
+        font-weight: 700
+        width: 350px
 
 
 .login-form__form .form-checkbox + label:before
@@ -83,21 +84,48 @@
     &-hint
         font-size: 17px
 
-@media (max-width: 991px)
-    .login
-        &-form
-            &::before
-                left: 140px
-            &::after
-                right: 140px
+.p404
+    padding: 60px 0
+    &-blocks
+        display: flex
+        align-items: center
+    &-block
+        padding: 5px
+        width: 50%
+
+    &-button
+        margin-top: 40px
+    &-img
+        text-align: center
+        img
+            max-width: 100%
+    &-text
+        margin-top: 20px
+        font-size: 30px
+        text-align: center
+        color: $dark
+        font-weight: 700
 
 @media (max-width: 991px)
-    .login
-        &-title
-            margin-bottom: 0
+    .p404
+        &-text
+            margin-bottom: 20px
+            font-size: 23px
+        &-img
+            img
+                max-width: 400px
 
 @media (max-width: 767px)
+    .p404
+        &-blocks
+            flex-direction: column
+            justify-content: center
+        &-block
+            width: 100%
     .login
+        &-title
+            &__remind
+                font-size: 24px
         &-form
             &::before
                 left: 50px
@@ -105,34 +133,33 @@
                 right: 50px
 
 @media (max-width: 575px)
-    .login
-        &-title
+    .p404
+        &-text
             font-size: 20px
+        &-button
+            width: 290px
+        &-img
+            img
+                width: 250px
+
+    .login
+        &-remind
+            &__text
+                width: 290px
+        &-title
             &__wrapper
                 margin: auto
-                padding-left: 50px
                 width: 290px
-                text-align: left
                 position: relative
-        &-img
-            display: none
-            &__mob
-                position: absolute
-                width: 40px
-                display: block
-                top: 0
-                left: 0
-                z-index: -1
-
+        &-border
+            width: 400px
 
         &-auth
             margin-bottom: 10px
             font-size: 14px
             &__remind
                 font-size: 11px
-        &-border
-            display: none
-        &-btn
+        &-button
             margin-top: 5px
             width: 290px
         &-form
@@ -150,3 +177,8 @@
         &-hint
             margin: 0 auto 10px
             width: 200px
+
+@media (max-width: 400px)
+    .login
+        &-border
+            width: 320px
