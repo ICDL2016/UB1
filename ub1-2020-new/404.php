@@ -4,7 +4,7 @@
     <div class="p404-blocks">
       <div class="p404-block">
         <div class="p404-img">
-          <img src="img/404/404-error.png" alt="error">
+          <img src="img/404/404-error.png" alt="error" class="p404-img404">
         </div>
         <div class="p404-text">
           Неправильно набран
@@ -16,7 +16,7 @@
 
       <div class="p404-block">
         <div class="p404-img">
-          <img src="img/404/404-robot.png" alt="robot">
+          <img src="img/404/404-robot.png" alt="robot" class="p404-robot">
         </div>
       </div>
     </div>
