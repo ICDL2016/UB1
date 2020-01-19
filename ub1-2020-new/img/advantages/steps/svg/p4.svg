@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="44px" height="44px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 250 250"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#72B3FD}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer-35">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1685939078896">
+   <g>
+    <path class="fil0" d="M85 0c-34,0 -61,27 -61,60l0 33 4 0c0,-9 7,-16 16,-16 0,-9 8,-17 16,-17l49 0c9,0 16,8 16,17 9,0 16,7 16,16l4 0 0 -33c0,-33 -27,-60 -60,-60z"/>
+    <polygon class="fil0" points="234,169 161,169 161,121 234,121 "/>
+    <g>
+     <path class="fil1" d="M101 113l-8 0c0,4 -4,8 -8,8 -5,0 -8,-4 -8,-8l-8 0c0,9 7,16 16,16 9,0 16,-7 16,-16z"/>
+     <circle class="fil1" cx="64" cy="89" r="4"/>
+     <circle class="fil1" cx="105" cy="89" r="4"/>
+     <rect class="fil1" x="97" y="206" width="24.1801" height="8.05999"/>
+     <path class="fil1" d="M161 105c-9,0 -16,7 -16,16l0 41 -36 -12 0 -8c10,-7 17,-17 19,-29 10,-2 17,-10 17,-20 0,-10 -7,-18 -16,-20 -2,-9 -10,-17 -20,-17l-49 0c-9,0 -18,8 -19,17 -10,2 -17,10 -17,20 0,10 7,18 17,19 2,13 9,23 19,30l0 8 -41 14c-11,4 -19,15 -19,27l0 59 161 0 4 0 85 0 0 -12 0 -20 0 -113 -89 0zm-24 -12c0,5 -3,9 -8,11l0 -23c5,2 8,6 8,12zm-105 0c0,-6 4,-10 8,-12l0 23c-4,-2 -8,-6 -8,-11zm84 68l-12 25 -14 -16 16 -12 10 3zm-68 -56l0 -28c0,-7 6,-13 12,-13l49 0c6,0 12,6 12,13l0 28c0,20 -16,36 -36,36 -20,0 -37,-16 -37,-36zm37 44c5,0 11,-1 16,-3l0 5 -16 13 -16 -13 0 -5c5,2 10,3 16,3zm-21 9l15 12 -14 16 -12 -25 11 -3zm-56 33c0,-9 6,-17 14,-19l23 -8 19 37 21 -25 21 25 18 -37 21 7 0 63c0,3 1,5 2,8l-10 0 0 -36 -8 0 0 36 -89 0 0 -36 -8 0 0 36 -24 0 0 -51zm234 51l-77 0 -4 0c-4,0 -8,-4 -8,-8 0,-5 4,-8 8,-8l81 0 0 12 0 4zm-81 -24c-3,0 -5,0 -8,2l0 -99c0,-5 4,-8 8,-8l81 0 0 105 -81 0z"/>
+     <rect class="fil1" x="193" y="177" width="40.3003" height="8.05999"/>
+     <rect class="fil1" x="226" y="193" width="8.05999" height="8.05999"/>
+     <rect class="fil1" x="210" y="193" width="8.05999" height="8.05999"/>
+     <rect class="fil1" x="193" y="193" width="8.05999" height="8.05999"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,68 @@
+.about
+    &-video
+        height: 350px
+        &__container
+            display: flex
+            align-items: center
+            position: relative
+            width: 550px
+        &__pic
+            width: 220px
+            position: absolute
+            right: 0
+            bottom: 0
+    &-diploma
+        margin-bottom: 30px
+        background: none
+    &-start
+        &__photo
+            left: 460px
+            width: 400px
+
+@media screen and (max-width: 991px)
+    .about
+        &-video
+            &__wrapper
+                display: flex
+                align-items: center
+                flex-direction: column
+                width: 50%
+            &__title
+                margin-bottom: 0
+        &-start
+            &__text
+                margin-bottom: 400px
+            &__photo
+                left: 50%
+
+@media screen and (max-width: 767px)
+    .about
+        &-diploma
+            padding-top: 680px
+        &-advantages
+            &__title
+                padding-top: 0
+
+@media screen and (max-width: 575px)
+    .about
+        &-video
+            &__container
+                width: 100%
+            &__pic
+                right: 0
+            &__play
+                margin-bottom: 100px
+                svg
+                    height: 60px
+                    width: 60px
+            &__title
+                padding: 5px
+                position: absolute
+                z-index: 12
+                top: 50%
+                background: rgba(#fff, .8)
+        &-start
+            &__text
+                margin-bottom: 320px
+            &__photo
+                width: 300px

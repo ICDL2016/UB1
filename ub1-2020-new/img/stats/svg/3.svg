@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="67px" height="74px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2592 2852"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#72B3FD}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer-149">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1685945907776">
+   <g>
+    <path class="fil0" d="M2254 2576l-46 0 0 -588 -92 0 0 588 -92 0 0 -588 -92 0 0 404 -189 0c-21,-105 -114,-184 -225,-184l-644 0c-111,0 -204,79 -225,184l-189 0 0 -404 -92 0 0 588 -92 0 0 -588 -92 0 0 588 -46 0c-76,0 -138,62 -138,138l0 138 2392 0 0 -138c0,-76 -62,-138 -138,-138zm-1380 -276l644 0c60,0 110,39 129,92l-903 0c19,-53 70,-92 130,-92zm-414 184l1472 0 0 92 -1472 0 0 -92zm1840 276l-2208 0 0 -46c0,-25 21,-46 46,-46l2116 0c25,0 46,21 46,46l0 46z"/>
+    <g>
+     <path class="fil1" d="M2070 2070c-102,0 -184,-83 -184,-184 0,-102 82,-184 184,-184 101,0 184,82 184,184 0,101 -83,184 -184,184z"/>
+    </g>
+    <path class="fil0" d="M2592 460l-522 0 0 -230c0,-76 -62,-138 -138,-138l-644 0 0 92 644 0c25,0 46,21 46,46l0 790c-15,-5 -30,-8 -46,-8l-644 0 0 92 460 0 0 230c0,76 62,138 138,138l706 0 -152 -506 152 -506zm-660 644c25,0 46,21 46,46 0,25 -21,46 -46,46l-46 0c-16,0 -32,3 -46,8l0 -100 92 0zm536 276l-582 0c-25,0 -46,-21 -46,-46 0,-25 21,-46 46,-46l46 0c76,0 138,-62 138,-138l0 -598 398 0 -124 414 124 414z"/>
+    <g>
+     <path class="fil1" d="M322 2070c-101,0 -184,-83 -184,-184 0,-102 83,-184 184,-184 101,0 184,82 184,184 0,101 -83,184 -184,184z"/>
+    </g>
+    <path class="fil1" d="M1196 0c-76,0 -138,62 -138,138l0 2070 276 0 0 -2070c0,-76 -62,-138 -138,-138z"/>
+    <g>
+     <rect class="fil0" x="1058" y="2024" width="275.993" height="91.9968"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
