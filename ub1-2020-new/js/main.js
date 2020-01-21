@@ -48,7 +48,7 @@ $(document).ready(function () {
     });
 
     //бургер-меню
-    $('.video-all__arrow').on('click', function () {
+    $('.video-all__top').on('click', function () {
         $(this).toggleClass('video-all__dark');
         $('.video-all__list').slideToggle();
     });

@@ -1,0 +1,197 @@
+.contacts
+    &-top
+        display: flex
+        justify-content: center
+        padding: 40px 0
+    &-form
+        display: flex
+        flex-direction: column
+        padding: 15px 10px 30px
+        width: 400px
+        background: #d0d9ed
+        position: relative
+        input, textarea
+            margin-bottom: 10px
+            padding: 10px 5px
+            border-radius: 5px
+            border: none
+        .form-input__span
+            color: red
+        .form-checkbox + label, .form-checkbox + label a
+            color: $dark
+    &-button
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -30px
+        width: 290px
+        padding: 15px 10px
+        font-weight: 700
+        font-size: 22px
+        &:hover
+            font-weight: 700
+    &-title
+        margin-bottom: 15px
+        font-size: 26px
+        font-weight: 700
+        color: $dark
+        img
+            margin-right: 5px
+            width: 40px
+    &-img
+        margin-left: 40px
+        img
+            width: 300px
+
+    &-phone
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 20px
+        img
+            width: 80px
+    &-text
+        margin-left: 10px
+        text-align: left
+        span
+            display: block
+            color: #212121
+            font-size: 16px
+        a
+            display: block
+            font-size: 30px
+            color: $dark
+            &:hover
+                text-decoration: underline
+    &-managers
+        &__block
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-bottom: 20px
+        &__title
+            margin-bottom: 15px
+            color: $dark
+            font-size: 25px
+
+    &-manager
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin: 0 10px
+        &__img
+            margin-bottom: 10px
+            width: 180px
+            height: 180px
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            border-radius: 50%
+            border: 2px solid $dark
+            background: url(../img/contacts/operator.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            background-position-y: 0
+        &__name
+            width: 220px
+            padding: 10px
+            background: $dark
+            text-align: center
+            color: #fff
+            -webkit-border-radius: 30px
+            -moz-border-radius: 30px
+            border-radius: 30px
+    &-address
+        margin: auto
+        max-width: 700px
+        font-size: 20px
+        font-weight: 700
+        color: $dark
+        span
+            display: block
+            color: #2a2a2a
+    &-gallery
+        text-align: center
+        margin: 20px auto
+        img
+            margin-bottom: 4px
+            width: 300px
+            height: 200px
+            display: inline-block
+    &-start
+        padding: 20px 0
+        &__block
+            width: 100%
+
+@media screen and (max-width: 767px)
+    .contacts
+        &-top
+            padding-top: 170px
+            padding-bottom: 60px
+            position: relative
+        &-img
+            position: absolute
+            top: 10px
+            margin-left: 100px
+            img
+                width: 200px
+        &-title
+            width: max-content
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            img
+                margin-bottom: 10px
+                width: 80px
+        &-manager
+            &__img
+                width: 140px
+                height: 140px
+            &__name
+                width: 160px
+        &-start
+            &__text
+                margin-bottom: 20px
+            .start-block__icon
+                display: block
+        &-gallery
+            a
+                &:nth-child(even)
+                    display: none
+
+@media screen and (max-width: 525px)
+    .contacts
+        &-managers
+            &__title
+                font-size: 18px
+        &-manager
+            margin: 0 3px
+            &__img
+                width: 100px
+                height: 100px
+            &__name
+                    width: 100px
+        &-address
+            font-size: 16px
+        &-start
+            &__text
+                font-size: 16px
+
+@media screen and (max-width: 425px)
+    .contacts
+        &-container
+            padding-left: 0
+            padding-right: 0
+        &-title
+            padding-left: 10px
+        &-img
+            margin-left: 0
+            right: 10px
+            img
+                width: 180px
+        &-form
+            width: 100%
+        &-top
+            padding-top: 140px
+            display: block
