@@ -84,10 +84,10 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-12 col-md-6">
         <a class="footer-logo" href="index.php">
-          <img src="img/header/logo.png" alt="logo">
+          <img src="img/header/logo.svg" alt="logo">
         </a>
       </div>
 

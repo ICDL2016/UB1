@@ -16,9 +16,11 @@
       </form>
 
       <div class="video-all">
-        Все сферы деятельности
-        <div class="video-all__arrow">
-          <img src="img/video/video-more.png" alt="more">
+        <div class="video-all__top">
+          Все сферы деятельности
+          <div class="video-all__arrow">
+            <img src="img/video/video-more.png" alt="more">
+          </div>
         </div>
 
         <ul class="video-all__list">
