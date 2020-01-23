@@ -3,7 +3,7 @@
     <div class="row mb-3 pb-2 footer-border">
       <div class="col-12 col-md-2">
         <a class="footer-logo footer-logo__mobile" href="index.php">
-          <img src="img/header/logo.png" alt="logo">
+          <img src="img/header/logo.svg" alt="logo">
         </a>
         <div class="footer-menu">
           <div class="footer-menu__title">МЕНЮ</div>
