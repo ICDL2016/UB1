@@ -53,4 +53,22 @@ $(document).ready(function () {
         $('.video-all__list').slideToggle();
     });
 
+    //курсы
+    if($('.offer-blocks').length) {
+        let current = 6;
+        let all = $('.offer-block').length;
+        $('.offer-current').html(current);
+        $('.offer-all').html(all);
+        $('.offer-block').hide().slice(0,current).fadeIn();
+        $('.offer-more').click(function (e) {
+            e.preventDefault();
+            current += 6;
+            if (current > all) {
+                current = all;
+                $('.offer-more').hide();
+            }
+            $('.offer-block').hide().slice(0,current).fadeIn();
+            $('.offer-current').html(current);
+        });
+    }
 });

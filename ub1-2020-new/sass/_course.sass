@@ -1,3 +1,25 @@
+.auth
+    &-field
+        display: block
+        margin-bottom: 5px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        padding: 5px
+        text-align: center
+        color: #fff
+        background-color: $dark
+        transition: background-color, .3s
+        cursor: pointer
+        &:hover
+            color: #fff
+            background-color: $light
+    &-descr
+        margin: 10px 0 15px
+        text-align: center
+        font-size: 18px
+        color: #fff
+
 .course
     &-video
         background: url(../img/course/course-video.png) center no-repeat
@@ -77,6 +99,11 @@
     &-button
         width: 290px
         z-index: 10
+        &::before, &::after
+            width: 13px
+        small
+            font-size: 11px
+            display: block
 
     &-prices
         display: flex

@@ -104,6 +104,16 @@
         bottom: 0
         right: 0
         height: 425px
+    &-under
+        display: none
+        &__wrapper
+            margin: auto
+            padding-top: 30px
+            width: 50%
+        .video-title
+            text-align: center
+        .video-form__input
+            border: 1px solid $light
 
 #divPlayer1
     display: none
@@ -125,6 +135,9 @@
             margin-bottom: 10px
         &-all
             z-index: 1
+
+    .video-under__wrapper
+        width: 100%
 
 @media screen and (max-width: 767px)
     .video
@@ -152,6 +165,9 @@
             padding: 10px 25px
             &__list
                 top: 44px
+
+    .video-under .video-title
+        margin-bottom: 15px
 
 @media screen and (max-width: 575px)
     .video
