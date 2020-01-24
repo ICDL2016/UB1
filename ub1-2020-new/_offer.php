@@ -21,6 +21,6 @@
   </div>
 
   <div class="offer-more">
-    40 из 390 <a href="#">Смотреть еще</a>
+    <span class="offer-current"></span> из <span class="offer-all"></span> <a href="#">Смотреть еще</a>
   </div>
 </div>

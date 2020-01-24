@@ -35,17 +35,9 @@
       </div>
 
       <form class="course-form__form">
-        <input class="form-input__name" type="text" name="name" placeholder="Имя*">
-        <div class="form-input__span form-input__span-name">Поле "Имя" обязательно для
-          заполнения
-        </div>
-        <input class="form-input__email" type="email" name="email" placeholder="Email*">
-        <div class="form-input__span form-input__span-email">Поле "Email" обязательно для заполнения и должно содержать
-          правильный электронный адрес (например, example@mail.ru)
-        </div>
-        <input class="form-input__phone" type="text" name="phone" placeholder="Введите Ваш телефон">
-        <input class="form-checkbox" type="checkbox" name="checkbox" id="ch1" checked required>
-        <label class="form-label" for="ch1">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
+        <div class="auth-field auth-name">Имя</div>
+        <div class="auth-field auth-email">abc@abc.ru</div>
+        <div class="auth-field auth-phone">+71002003040</div>
         <button class="button course-button">
           <span>Начать обучение бесплатно</span>
           <small>Посмотреть мой образец документа об обучении</small>
@@ -176,9 +168,8 @@
         <input class="form-checkbox" type="checkbox" name="checkbox" id="ch1" checked required>
         <label class="form-label" for="ch1">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
         <button class="button course-button">
+          Выбрать программу <br>
           <span>Начать обучение бесплатно</span>
-          <small>Посмотреть мой образец документа об обучении</small>
-          <small>сегодня 25.04.2019</small>
         </button>
         <div class="course-form__small">
           Нажмите на кнопку «Начать обучение бесплатно» и вы

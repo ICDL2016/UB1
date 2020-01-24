@@ -51,6 +51,7 @@
       function play1(event) {
           $('.video-wrapper, .video > .container').hide();
           $('#divPlayer1').show();
+          $('.video-under').show();
           $('iframe').css('display', 'block');
           player1.playVideo();
       }
