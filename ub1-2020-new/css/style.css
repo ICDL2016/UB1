@@ -351,6 +351,16 @@ a, a:hover {
     bottom: 0;
     right: 0;
     height: 425px; }
+  .video-under {
+    display: none; }
+    .video-under__wrapper {
+      margin: auto;
+      padding-top: 30px;
+      width: 50%; }
+    .video-under .video-title {
+      text-align: center; }
+    .video-under .video-form__input {
+      border: 1px solid #81c0fc; }
 
 #divPlayer1 {
   display: none; }
@@ -370,7 +380,10 @@ a, a:hover {
     .video-form {
       margin-bottom: 10px; }
     .video-all {
-      z-index: 1; } }
+      z-index: 1; }
+
+  .video-under__wrapper {
+    width: 100%; } }
 @media screen and (max-width: 767px) {
   .video {
     height: 450px; }
@@ -394,7 +407,10 @@ a, a:hover {
     .video-all {
       padding: 10px 25px; }
       .video-all__list {
-        top: 44px; } }
+        top: 44px; }
+
+  .video-under .video-title {
+    margin-bottom: 15px; } }
 @media screen and (max-width: 575px) {
   .video .container {
     padding-top: 15px; }
@@ -1587,6 +1603,27 @@ a, a:hover {
   .contacts-top {
     padding-top: 140px;
     display: block; } }
+.auth-field {
+  display: block;
+  margin-bottom: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  background-color: #1e54b2;
+  transition: background-color, 0.3s;
+  cursor: pointer; }
+  .auth-field:hover {
+    color: #fff;
+    background-color: #81c0fc; }
+.auth-descr {
+  margin: 10px 0 15px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff; }
+
 .course-video {
   background: url(../img/course/course-video.png) center no-repeat;
   -webkit-background-size: cover;
@@ -1664,6 +1701,11 @@ a, a:hover {
 .course-button {
   width: 290px;
   z-index: 10; }
+  .course-button::before, .course-button::after {
+    width: 13px; }
+  .course-button small {
+    font-size: 11px;
+    display: block; }
 .course-prices {
   display: flex;
   justify-content: space-between;
