@@ -1603,6 +1603,10 @@ a, a:hover {
   .contacts-top {
     padding-top: 140px;
     display: block; } }
+.auth-form {
+  height: 360px; }
+  .auth-form__bottom {
+    height: 520px; }
 .auth-field {
   display: block;
   margin-bottom: 5px;
