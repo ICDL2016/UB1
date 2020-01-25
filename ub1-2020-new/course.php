@@ -173,8 +173,8 @@
           правильный электронный адрес (например, example@mail.ru)
         </div>
         <input class="form-input__phone" type="text" name="phone" placeholder="Введите Ваш телефон">
-        <input class="form-checkbox" type="checkbox" name="checkbox" id="ch1" checked required>
-        <label class="form-label" for="ch1">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
+        <input class="form-checkbox" type="checkbox" name="checkbox" id="ch2" checked required>
+        <label class="form-label" for="ch2">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
         <button class="button course-button">
           <span>Начать обучение бесплатно</span>
           <small>Посмотреть мой образец документа об обучении</small>
