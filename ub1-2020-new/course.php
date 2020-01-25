@@ -189,6 +189,7 @@
   </div>
 
   <div class="offer">
+    <div class="course-video__small">Другие курсы в сфере</div>
     <div class="title course-program__title">Менеджмент, управление организацией и персоналом</div>
     <div class="offer-blocks">
       <?php for ($i = 0; $i < 10; $i++) : ?>

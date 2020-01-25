@@ -108,6 +108,8 @@
         small
             font-size: 11px
             display: block
+        span
+            font-weight: 700
 
     &-prices
         display: flex
@@ -126,12 +128,21 @@
             position: relative
             span
                 position: absolute
-                top: -10px
+                display: block
+                top: -15px
                 left: 50%
                 transform: translateX(-50%)
                 font-size: 16px
-                text-decoration: line-through
                 color: #000
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 150%
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    height: 1px
+                    background: $dark
         img
             width: 55px
     &-title
@@ -154,11 +165,11 @@
             display: flex
             flex-wrap: wrap
             margin: auto
-            width: 1380px
+            width: 1640px
         &__block
             display: flex
             margin: 5px
-            width: 450px
+            width: 400px
             flex-shrink: 0
             border: 1px solid $light
             cursor: pointer
@@ -173,14 +184,15 @@
                     color: #fff
         &__img
             width: 150px
+            overflow-x: hidden
             flex-shrink: 0
             img
-                width: 100%
+                width: auto
         &__info
             display: flex
             flex-direction: column
             justify-content: center
-            padding: 5px
+            padding: 5px 5px 5px 10px
             position: relative
             transition: color .3s, background-color .3s
             &::before
@@ -200,7 +212,7 @@
             color: $dark
             transition: color .3s
             &:hover
-                text-decoration: line-through
+                text-decoration: underline
 
     &-start
         background: #f6f6f6
@@ -212,11 +224,17 @@
             left: 520px
             width: 350px
 
-@media screen and (max-width: 1379px)
+@media screen and (max-width: 1639px)
     .course
         &-program
             &__blocks
-                width: 920px
+                width: 1230px
+
+@media screen and (max-width: 1229px)
+    .course
+        &-program
+            &__blocks
+                width: 820px
 
 @media screen and (max-width: 991px)
     .course

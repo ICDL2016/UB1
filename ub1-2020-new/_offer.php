@@ -1,6 +1,6 @@
 <div class="offer">
   <div class="offer-blocks">
-    <?php for($i=0; $i<20; $i++) : ?>
+    <?php for($i=0; $i<30; $i++) : ?>
     <div class="offer-block">
       <div class="offer-img" style="background: url(img/offer/offer-block<?=rand(1,4);?>.png) center no-repeat; background-size: cover; background-position-y: 0"></div>
 

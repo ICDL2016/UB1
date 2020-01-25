@@ -83,21 +83,25 @@
         &__list
             display: none
             position: absolute
+            border-top: 1px solid $light
+            height: 200px
+            overflow-y: scroll
             left: 0
             width: 100%
             top: 54px
             padding: 5px 0
             z-index: 2
-            background: $light
+            background: $dark
             li
                 a
                     display: block
                     width: 100%
                     padding: 5px 15px
-                    font-weight: 400
+                    font-weight: 300
                     transition: background-color .3s, color .3s
+                    color: #fff
                     &:hover
-                        background: $dark
+                        background: $light
                         color: #fff
     &-pic
         position: absolute
