@@ -74,4 +74,15 @@ $(document).ready(function () {
             $('.offer-more').hide();
         }
     }
+
+    //popup open/close
+    $('.course-program__block, .course-program__more').click(function (e) {
+        e.preventDefault();
+        $('.overlay, .popup-course').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+    $('.popup-close, .overlay').click(function () {
+        $('.overlay, .popup-course').fadeOut();
+        $('body').css('overflow-y', 'visible');
+    });
 });
