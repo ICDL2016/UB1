@@ -1,0 +1,26 @@
+.course
+    &-title
+        &__mobile
+            display: none
+
+@media screen and (max-width: 991px)
+    .course
+        &-video
+            &__flexible
+                .container
+                    padding-bottom: 15px
+                .video-play
+                    margin-bottom: 0
+        &-title
+            &__mobile
+                margin-bottom: 40px
+                display: block
+                text-align: center
+                .course-video__small
+                    margin: 0 auto 5px
+                    font-size: 18px
+                .course-video__title
+                    font-size: 22px
+
+    .hide-mobile
+        display: none
