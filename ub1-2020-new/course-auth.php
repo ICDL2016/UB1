@@ -1,13 +1,13 @@
 <?php require_once '_header.php'; ?>
-  <div class="video course-video">
+  <div class="video course-video course-video__flexible">
     <div class="container position-relative course-video__container">
       <div class="video-wrapper course-video__wrapper">
         <div class="video-play" onclick="play1(event)">
           <?php require_once 'img/video/play.svg'; ?>
         </div>
 
-        <div class="course-video__small">Курс обучения:</div>
-        <div class="video-title course-video__title">
+        <div class="course-video__small hide-mobile">Курс обучения:</div>
+        <div class="video-title course-video__title hide-mobile">
           <span>Менеджмент, управление организацией и персоналом</span>
         </div>
       </div>
@@ -16,6 +16,14 @@
   </div>
 
   <div class="course-form auth-form">
+      <div class="course-title__mobile">
+          <div class="container">
+              <div class="course-video__small">Курс обучения:</div>
+              <div class="video-title course-video__title">
+                  <span>Менеджмент, управление организацией и персоналом</span>
+              </div>
+          </div>
+      </div>
     <div class="course-form__block">
       <div class="course-prices">
         <div class="course-price">
@@ -200,6 +208,13 @@
 <?php require_once '_footer.php'; ?>
 <?php require_once '_scripts.php'; ?>
   <script>
+      let canResize = true;
+      $('.course-video__flexible').height($('.course-video__flexible').width() / 3.5)
+      $(window).resize(function () {
+          if (canResize === true) {
+              $('.course-video__flexible').height($('.course-video__flexible').width() / 3.5)
+          }
+      });
       //video
       var tag = document.createElement('script');
 
@@ -218,57 +233,12 @@
       }
 
       function play1(event) {
+          canResize = false;
+          $('.course-video__flexible').height(350)
           $('.course-video__container').hide();
           $('#divPlayer1').show();
           $('iframe').css('display', 'block');
           player1.playVideo();
       }
-  </script>
-
-  <script>
-      // псевдовалидация
-
-      let emptyTop = false;
-      let emptyBottom = false;
-      $('.form-input__name').on('click', function () {
-          emptyTop = true;
-          if (emptyBottom === true && ($(this).parent().children('.form-input__email').val().length === 0 || $(this).parent().children('.form-input__email').val().indexOf('@') === -1)) {
-              $(this).parent().children('.form-input__span-email').show();
-          }
-      }).on('input', function () {
-          $(this).parent().children('.form-input__span-name').hide();
-          $(this).parent().children('.form-input__name').removeClass('border-red');
-      });
-
-      $('.form-input__email').on('click', function () {
-          emptyBottom = true;
-          if (emptyTop === true && $(this).parent().children('.form-input__name').val().length === 0) {
-              $(this).parent().children('.form-input__span-name').show();
-          }
-      }).on('input', function () {
-          $(this).parent().children('.form-input__span-email').hide();
-          $(this).parent().children('.form-input__email').removeClass('border-red');
-      });
-
-      $('.course-button').on('click', function () {
-          event.preventDefault();
-          let send = true;
-
-          if ($(this).parent().children('.form-input__name').val().length === 0) {
-              $(this).parent().children('.form-input__span-name').show();
-              $(this).parent().children('.form-input__name').addClass('border-red');
-              send = false;
-          }
-
-          if ($(this).parent().children('.form-input__email').val().length === 0 || $(this).parent().children('.form-input__email').val().indexOf('@') === -1) {
-              $(this).parent().children('.form-input__span-email').show();
-              $(this).parent().children('.form-input__email').addClass('border-red');
-              send = false;
-          }
-
-          if (send === true) {
-              $(this).parent().submit();
-          }
-      });
   </script>
 <?php require_once '_end.php'; ?>
