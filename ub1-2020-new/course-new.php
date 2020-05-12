@@ -256,8 +256,9 @@
 
     function play1(event) {
         canResize = false;
-        $('.course-video__flexible').height(350)
+        $('.course-video__flexible').height(350);
         $('.course-video__container').hide();
+        $('.course-title__mobile').show();
         $('#divPlayer1').show();
         $('iframe').css('display', 'block');
         player1.playVideo();
